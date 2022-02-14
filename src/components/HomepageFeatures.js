@@ -11,7 +11,7 @@ const FeatureList = [
     description: (
       <>
         BrayanBot was designed from the ground up to be easily installed and
-        configured to your liking for your discord server, also providing utilities for developers to create addons!
+        configured to your liking for your discord server, while also providing utilities for developers to create addons!
       </>
     ),
   },
