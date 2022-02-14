@@ -33,7 +33,7 @@ const config = {
       navbar: {
         title: 'Brayan Bot',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Logo',
           src: 'img/logo_circle.png',
         },
         items: [
@@ -43,12 +43,13 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/discord', label: 'Discord', position: 'left'},
+          {to: 'blog', label: 'Blog', position: 'left'},
+          {to: '/discord', label: 'Discord', position: 'right'},
           {
             href: 'https://github.com/BrayanBotDev/brayanbot',
             label: 'GitHub',
             position: 'right',
-          },
+          }, // or position: 'right'
         ],
       },
       footer: {
@@ -72,7 +73,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} BranBotDev, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} BrayanBot Developers.`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/github'),
