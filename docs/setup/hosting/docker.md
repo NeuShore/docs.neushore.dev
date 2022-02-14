@@ -55,4 +55,4 @@ And this will run your instance of BrayanBot!
 
 ## ⚙️ Customizing
 
-To see the instructions on customizing BrayanBot, please see the [Customizing](Customizing) Page of the Wiki.
+To see the instructions on customizing BrayanBot, please see the [Customizing](/docs/Management/customizing) Page of the Wiki.

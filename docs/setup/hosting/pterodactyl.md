@@ -6,7 +6,7 @@ sidebar_position: 2
 ---
 
 [Pterodactyl Panel](https://pterodactyl.io/) is a server management panel that is used by many hosting providers.
-If you are using a Hosting Provider, you should take a look at our [Using a Hosting Provider](/hosting/provider) page. This page only covers instructions for **self-hosted** Pterodactyl instances.
+If you are using a Hosting Provider, you should take a look at our Using a Hosting Provider below. This only covers instructions for **self-hosted** Pterodactyl instances.
 
 ## Using Pterodactyl
 

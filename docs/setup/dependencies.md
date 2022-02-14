@@ -32,6 +32,6 @@ If you are using Docker to host BrayanBot, you will also need
 :::danger Docker on Windows
 Thanks to [**Windows Subsystem for Linux (WSL)**](https://docs.microsoft.com/en-us/windows/wsl/install) and [**Docker Desktop**](https://www.docker.com/products/docker-desktop), it is possible to run Docker on a Windows machine, but we do not offer installation instructions nor support for users running Docker on windows, you will be on your own. You have been warned.
 :::
-If you have successfully installed the prerequisites, proceed to [Creating your Bot Application](/setup/pre-installation/).
+If you have successfully installed the prerequisites, proceed to [Creating your Bot Application](/docs/setup/pre-installation).
 
-[^1]: For recommended hardware and specs, see [General Recommendations](/setup/recommendations/)
+[^1]: For recommended hardware and specs, see [General Recommendations](/docs/setup/recomendations)

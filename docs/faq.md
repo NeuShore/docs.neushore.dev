@@ -26,7 +26,7 @@ sidebar_position: 5
 
 **Q:** I would like to develop my own addons, how can I do that?
 
-**A:** You will want to start by reading[Creating your Own Addons](/developers/addons/creating-your-own) page.
+**A:** You will want to start by reading[Creating your Own Addons](/docs/Developers/Addons/creating-addons) page.
 
 ---
 
