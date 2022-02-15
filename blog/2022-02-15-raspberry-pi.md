@@ -19,7 +19,7 @@ Welcome to this blog! This page will provide instructions on how to install and 
 <!--truncate-->
 
 First and foremost, happy Valentines Day everbody!
-If you are single, I will be your company *and* guide today. If not, I will only be your guide, but nevertheless; I am your guide today I hope to provide what you will need to host BrayanBot on a Raspberry Pi 400 running Ubuntu. Certainly not my favorite distributions but nevertheless, it somehow still holds the title of the most popular server distro.
+If you are single, I will be your company *and* guide today. If not, I will only be your guide, but nevertheless; I am your guide today I hope to provide what you will need to host BrayanBot on a Raspberry Pi 400 running Ubuntu. Certainly not my favorite distribution but nevertheless, it somehow still holds the title of the most popular server distro.
 > *If you would like to read my take on this matter, more about why you should not be using Ubuntu [here](/).*
 
 But I digress, let us proceed with installation steps right away before I steal more of your time.
