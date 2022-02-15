@@ -7,9 +7,9 @@ sidebar_position: 1
 
 BrayanBot, while not offering too much in commands out-of-the-box; provides robust tools to help you create your own bot to suit your needs.
 
-- Custom [`Utils.js()`] to ease interaction with Discord API
-- [**Addon Handler**] to create the infrastructure for [First]() and [Third]() party addons.
-- Our very own [**Event Handler**]() to save you from creating your own.
+- Custom [`Utils.js`](/) to ease interaction with Discord API
+- [**Addon Handler**] to create the infrastructure for [First](/) and [Third](/) party addons.
+- Our very own [**Event Handler**](/) to save you from creating your own.
 - Installation installations and active support
 - Actively Maintained
 - Always free and open source

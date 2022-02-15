@@ -1,19 +1,16 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
-
-# Docker Hosting (Advanced)
+# Using Docker (Advanced)
 ---
 
 Installing on Docker allows you to easily deploy BrayanBot on any machine with ease. If you are planning to scale your server to your needs or to run multiple instances of BrayanBot; Docker is the recommended way. Basic knowledge of Docker is mandatory to use this method.
 
-!!! warning 
-    This page assumes that you have already completed the [Pre-Installation Steps](https://github.com/DakshNamdev/BrayanBot/wiki/Preinstall)
-    If you haven not yet completed the pre-installation steps, please go back and complete them because the bot cannot function without them.
-
-
+:::caution Note
+This page assumes that you have already completed the [Pre-Installation Steps](https://github.com/DakshNamdev/BrayanBot/wiki/Preinstall)
+If you haven not yet completed the pre-installation steps, please go back and complete them because the bot cannot function without them.
+:::
 ## Installation
-
 
 ### Building Locally
 
@@ -26,7 +23,7 @@ Simple as that!
 
 ### Using Docker-Compose (Recommended)
 
-If you are using Docker-Compose, you actually have 2 choices to how you want to use Docker-Compose. If you'd like to pick the easy path, just run the installation script with
+If you are using Docker-Compose, you actually have 2 different choices to how you want to use Docker-Compose. If you'd like to pick the easy path, just run the installation script with
 
 ```sh
 chmod +x install/docker-linux.sh && ./install/docker-linux.sh

@@ -3,6 +3,7 @@ sidebar_position: 3
 ---
 
 # Recomendations
+
 ---
 ## Preface
 
@@ -27,18 +28,24 @@ If you are using a hosting provider, [Using a Hosting Provider](/) is where you 
 
 ### Operating System
 
-We recommend running BrayanBot on a VPS or a local server running Linux. You may try and successfully run it on your Windows computer, but you will be more likely to face errors due to the operating system. Debian or Ubuntu (and their derivatives) are ideal, but if you choose to run it on a server running Arch Linux; installations (and support) will be provided where available.
-
+We recommend running BrayanBot on a Linux VPS or Dedicated server. A VPS running Debian or Ubuntu is ideal. You may try and successfully run BrayanBot on a Windows machine, but you will be more likely to face errors due to your Operating System on Windows than you would on Linux. Self-hosting on your personal computer running Windows is possible, but not recommended. We also recommend staying away from Discord Bot hosts, but they are preferred option over buying an entire VPS if you do not have one in your possession. 
 ### Specs
 
-BrayanBot is quite lightweight and does not require and entire VPS to run on. If you are not running docker, consider placing it in the corner of an already existing VPS or purchase Discord Bot Hosting for a reasonable price. The recommended specs for BrayanBot are
+BrayanBot is quite lightweight and does not require an entire VPS or a Dedicated server to run on. If you are not running Docker, consider placing BrayanBOt in the corner of an already existing VPS or purchase Discord Bot Hosting for a reasonable price. The recommended specs for BrayanBot are
 
 - 200mb ram
 - 1 Core
 - 500MB Storage
 
-Do keep in mind that those may be subjected to change based on the amount of users in your server and the number of addons you are running as well as the performance impact of those addons.
+> Do keep in mind that those may be subjected to change based on the amount of users in your server and the number of addons you are running as well as the performance impact of those addons.
+
+The recommended dedicated hosts are
+
+- (VPS) [Hetzner](https://www.hetzner.com/)
+- (VPS/Bot Hosting) [Revivenode](https://revivenode.com/)
+- (VPS) [Contabo](https://contabo.com/en/)
+- (VPS/Bot Hosting) [EnviroMC](https://enviromc.host/)
 
 ### Machine
 
-A [VPS](https://revivenode.com/dedicated.html?) or a small-scale Raspberry Pi is a great option if you're self-hosting due to their low cost and low maintenance nature. You may also choose to run the bot on your own personal computer (using PM2), but you will need to keep in mind that the bot will use your system resources and may deduct from overall performance.
+A VPS or a small-scale Raspberry Pi [(See blog)](/blog/raspberry-pi-installation) are both great options if you're self-hosting BrayanBot, due to their low cost and low maintenance nature. You may also choose to run the bot on your own personal computer (using PM2), but you will need to keep in mind that the bot will use your system resources and may deduct from overall performance.
