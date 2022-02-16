@@ -3276,6 +3276,11 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+discord-api-types@^0.27.1:
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.27.1.tgz#bd3fc48e0f9a1c8e975f17b006c931b0c57bf6f0"
+  integrity sha512-NhOrRs3TDx/p/e7+VCzcvtVz/Wkqa/olS82HJb2aM/oI0CLcnB+lJMXWa8wjn57XviFBcMMR0poqUMXx0IqTkQ==
+
 dns-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"

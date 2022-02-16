@@ -26,7 +26,12 @@ sidebar_position: 5
 
 **Q:** I would like to develop my own addons, how can I do that?
 
-**A:** You will want to start by reading[Creating your Own Addons](/docs/Developers/Addons/creating-addons) page.
+**A:** You will want to start by reading [Creating your Own Addons](/docs/Developers/Addons/creating-addons) page.
 
 ---
 
+**Q:** Can I use Corebot addons on BrayanBot?
+
+**A:** Short answer is "no." This is due to the fact that Corebot and BrayanBot use their own, seperate utilities, addon handlers and event handlers. However, you may ask
+
+---

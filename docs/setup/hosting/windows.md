@@ -2,13 +2,12 @@
 sidebar_position: 3
 ---
 
-# Windows Hosting
+# Hosting on Windows
 ---
 
-!!! warning ""
-    This page assumes that you have already completed the [Pre-Installation Steps](https://github.com/DakshNamdev/BrayanBot/wiki/Preinstall)
-    If you haven not yet completed the pre-installation steps, please go back and complete them because the bot cannot function without them.
-
+:::caution Note
+This page assumes that you have already completed the [Pre-Installation Steps](/docs/setup/pre-installation) If you haven not yet completed the pre-installation steps, please go back and complete them because the bot cannot function without them.
+:::
 ## Installation
 
 Clone the source code and move into the bot's directory.
