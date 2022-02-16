@@ -5,6 +5,9 @@ sidebar_position: 3
 # Hosting on Windows
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 :::caution Note
 This page assumes that you have already completed the [Pre-Installation Steps](/docs/setup/pre-installation) If you haven not yet completed the pre-installation steps, please go back and complete them because the bot cannot function without them.
 :::
@@ -12,31 +15,118 @@ This page assumes that you have already completed the [Pre-Installation Steps](/
 
 Clone the source code and move into the bot's directory.
 
-!!! danger "Dev Branch"
-    If you are interested in receiving updates *as soon as they are out* for the cost of high chance of breaking changes and less stability; you may clone into the **dev** branch instead of **main**. Changes from the dev branch will be *eventually* merged into main, but it is an option for those who like to live on edge.
+:::danger Dev Branch
+If you are interested in receiving updates *as soon as they are out* for the cost of high chance of breaking changes and less stability; you may clone into the **dev** branch instead of downloading **main**. Changes from the dev branch will be *eventually* merged into main, but it is an option for those who like to live on edge.
+:::
+### Downloading & Installing BrayanBot
 
-=== "Stable"
-    1. `git clone https://github.com/DakshNamdev/BrayanBot.git`
-    2. `cd BrayanBot`
-    3. `copy example.config.yml config.yml`
-=== "Dev"
-    1. `git clone -b dev https://github.com/DakshNamdev/BrayanBot.git`
-    2. `cd BrayanBot`
-    3. `copy example.config.yml config.yml`
+Installing BrayanBot is pretty straightforward and can be done in less than 5 steps.
 
-Install dependencies and start the bot.
-=== "NPM"
-    1. `npm install`
-    2. `npm run start`
-=== "Yarn"
-    1. `yarn`
-    2. `yarn start`
+<Tabs>
+<TabItem value="stable" label="Stable">
+
+1. Download the zip file and unzip
+    * Download BrayanBot from [Main Branch](https://github.com/BrayanbotDev/BrayanBot/archive/refs/heads/main.zip), [Github Releases](/) or [Coremart](https://coremart.net/resources/brayanbot-the-future.33/).
+    * Right click on the file and click "Extract"
+
+2. Move into the BrayanBot Directory
+    * Open Powershell / Right click BrayanBot folder and click "Open with VSCode"
+    * (If you have chosen powershell) ```cd /path/to/BrayanBot```
+
+3. Copy the example config to the main `config.yml` 
+
+```bash
+copy example.config.yml config.yml
+```
+
+**or if you would like to simply rename the file**
+
+```bash
+move example.config.yml config.yml
+```
+
+4. Edit your `config.yml`
+
+    * Open `config.yml` with your favorite text editor
+    * Enter your desired values
+    * Save and exit
+
+</TabItem>
+
+<TabItem value="Dev" label="Dev">
+
+:::danger Dev Branch
+If you are interested in receiving updates *as soon as they are out* for the cost of high chance of breaking changes and less stability; you may clone into the **dev** branch instead of **main**. Changes from the dev branch will be *eventually* merged into main, but it is an option for those who like to live on edge.
+You also must keep in mind that using `git` will set up version control for your bot files and will make it harder to update if you have edited default -and tracked- bot files. **Do not** use this branch if you do not know how to use **git**.
+:::
+
+1. Clone the Github Repo
+```bash
+git clone -b dev https://github.com/BrayanBotDev/BrayanBot.git
+```
+
+2. Move into the BrayanBot Directory
+```bash 
+cd /path/to/BrayanBot
+```
+
+3. Copy the example config to the main `config.yml` 
+```bash
+copy example.config.yml config.yml 
+```
+
+**or if you would like to rename the file instead of copying**
+
+```bash
+move example.config.yml config.yml
+```
+
+4. Edit your `config.yml`
+
+    * Open `config.yml` with your favorite text editor
+    * Enter your desired values
+    * Save and exit
+
+</TabItem>
+</Tabs>
+
+### Installing NodeJS Dependencies & Starting BrayanBot
+
+<Tabs>
+<TabItem value="yarn" label="Yarn">
+
+1. Install Yarn
+```bash
+sudo npm i -g yarn
+```
+2. Install Required dependencies
+```bash
+yarn
+```
+3. Start the Bot
+```bash
+yarn start
+```
+
+</TabItem>
+<TabItem value="npm" label="NPM">
+
+1. Install Required dependencies
+```bash
+npm install
+```
+2. Start the Bot
+```bash
+npm run start
+```
+
+</TabItem>
+</Tabs>
 
 And that's it, you have successfully started your bot!
 
 ## Power Controls
 If you would like to keep the bot running after you log out of your terminal/machine; you may use **PM2**. It will also allow you to have BrayanBot persist between reboots, if you configure it that way.
-
 ### Using PM2 Process Manager
 
 ```bash
@@ -51,5 +141,7 @@ pm2 start index.js --name brayanbot
 - `pm2 logs brayanbot` # View recent logs as well as a live console
 - `pm2 logs brayanbot --lines 1000 | nc termbin.com 9999` # Export the bot's past logs and paste them to termbin.
 
-!!! info 💡 Ran into a problem? 
-    Join our [support server](https://brayanbot.dev/discord) and open a ticket.
+## Getting Help
+:::info 💡 Ran into a problem?
+Join our [support server](https://brayanbot.dev/discord) and open a ticket.
+:::

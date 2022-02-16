@@ -1,12 +1,11 @@
 ---
 sidebar_position: 1
 ---
+# Hosting on Linux
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
-# Linux Machine
----
 
 :::caution Note
 This page assumes that you have already completed the [Pre-Installation Steps](/docs/setup/pre-installation) If you haven not yet completed the pre-installation steps, please go back and complete them because the bot cannot function without them.
@@ -26,21 +25,18 @@ The following guide only covers instructions for CLI installation. For GUI insta
 ```bash
 sudo apt install zip unzip wget 
 ```
-
 </TabItem>
 <TabItem value="arch" label="Arch">
 
 ```bash
 sudo pacman -S zip unzip wget
 ```
-
 </TabItem>
 <TabItem value="fedora" label="RedHat/CentOS/Fedora">
 
 ```bash
 sudo dnf install zip unzip wget
 ```
-
 </TabItem>
 </Tabs>
 
