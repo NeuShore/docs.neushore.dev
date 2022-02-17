@@ -36,7 +36,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Documentation ${siteConfig.title}`}
+      title={`${siteConfig.title} Documentation`}
       description="Discord bot that just works <head />">
       <HomepageHeader />
       <main>
