@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: About to host BrayanBot? Stop, read this first
 ---
 # Pre Installation
 

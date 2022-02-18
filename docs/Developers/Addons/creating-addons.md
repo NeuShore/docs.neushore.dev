@@ -1,5 +1,6 @@
 ---
 sidebar_place: 1
+description: Learn how to create your own addons
 ---
 # Creating Addons
 

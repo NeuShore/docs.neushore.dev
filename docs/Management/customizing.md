@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: Make BrayanBot truly yours
 ---
 
 # Customizing

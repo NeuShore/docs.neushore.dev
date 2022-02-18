@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+desciption: We didn't have an autoresponder, so you got this instead
 ---
 
 # F.A.Q

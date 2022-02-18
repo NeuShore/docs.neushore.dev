@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: Our recommendations to how you should host BrayanBot
 ---
 
 # Recomendations
