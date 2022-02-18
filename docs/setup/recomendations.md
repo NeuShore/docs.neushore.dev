@@ -23,7 +23,7 @@ If you know your way around NodeJS and npm, you should consider self-hosting Bra
 
 For easy scalability, you might consider [Docker](https://docs.docker.com/engine/reference/commandline/cli/) or [Docker Compose](https://docs.docker.com/compose/). There is also a [Public Docker Image](https://hub.docker.com/repository/docker/brayanbot/brayanbot) available for testing purposes.
 
-If you are using a hosting provider, [Using a Hosting Provider]([/docs/setup/hosting/pterodactyl#installing-brayanbot-on-pterodactyl](http://localhost:3000/docs/setup/hosting/pterodactyl#using-a-provider-hosting-company)) is where you should look. We also provide instructions for those using [Selfhosted Pterodactyl Panel](/docs/setup/hosting/pterodactyl#installing-brayanbot-on-pterodactyl)
+If you are using a hosting provider, [Using a Hosting Provider](docs/setup/hosting/pterodactyl#using-a-provider-hosting-company)) is where you should look. We also provide instructions for those using [Selfhosted Pterodactyl Panel](/docs/setup/hosting/pterodactyl#installing-brayanbot-on-pterodactyl)
 
 ## Recommended Installation 
 
