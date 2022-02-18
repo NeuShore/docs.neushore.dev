@@ -13,15 +13,15 @@ If you are using a Hosting Provider, you should take a look at our Using a Hosti
 ### Self-Hosted Pterodactyl
 Start by downloading our [Official Pterodactyl Egg](/) and create a server on your Pterodactyl Panel using the Pterodactyl Egg. (Video Instructions Below)
 
-<figure class="mdx-video" markdown>
-  <div class="mdx-video__inner">
+<figure  class="mdx-video" markdown>
+  <div align="center" class="mdx-video__inner">
     <iframe src="https://i.zorino.in/ZLXmsedge_Q4FbuWKa1a.mp4" allowfullscreen></iframe>
   </div>
 </figure>
 
 You may also install additional node modules directly from **Settings > Variables > Node Modules** section. Simply add the names of the modules you'd like to install and reboot.
-<figure class="mdx-video" markdown>
-  <div class="mdx-video__inner">
+<figure  class="mdx-video" markdown>
+  <div align="center" class="mdx-video__inner">
     <iframe src="https://i.zorino.in/ESJmsedge_uhfR8DiFF6.mp4" allowfullscreen></iframe>
   </div>
 </figure>
@@ -29,7 +29,7 @@ You may also install additional node modules directly from **Settings > Variable
 
 The Pterodactyl Egg allows you to customize your bot's settings directly from the **Variables** section under **Settings**.
 <figure>
-  <div>
+  <div align="center">
     <img src="https://i.zorino.in/KGTmsedge_g5opAI43OX.png"></img>
   </div>
 </figure>

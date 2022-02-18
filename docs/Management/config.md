@@ -7,7 +7,7 @@ description: Example config file
 
 ---
 
-``` yaml title="config.yml" linenums="1"
+``` yaml title="config.yml"
 Settings:
     Token: "BOT-TOKEN-HERE"
     Prefix: "-" # your 

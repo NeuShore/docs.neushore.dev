@@ -15,13 +15,18 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.indexCtas}>
-          <Link
+        <Link
+            className="button button--info button--lg"
+            to="https://brayanbot.dev/discord">
+            Discord
+          </Link>
+        <Link
             className="button button--secondary button--lg"
             to="/docs/setup/dependencies">
             Quick Install
           </Link>
           <Link
-            className="button button--info button--lg"
+            className="button button--secondary button--lg"
             to="https://github.com/BrayanbotDev/BrayanBot">
             Github
           </Link>
