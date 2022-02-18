@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: How to receive support... and how not to
 ---
 
 # Support

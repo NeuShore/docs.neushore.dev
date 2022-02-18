@@ -1,13 +1,16 @@
 ---
 sidebar_position: 2
----
-# Configuration File
+description: Example config file
 ---
 
-``` yaml title="config.yml" linenums="1"
+# Configuration File
+
+---
+
+``` yaml title="config.yml"
 Settings:
     Token: "BOT-TOKEN-HERE"
-    Prefix: "-"
+    Prefix: "-" # your 
     ServerID: "YOUR-SERVER-ID-HERE"
     Storage: "database.db"
     DevMode: false # This option will reset every addon configs.

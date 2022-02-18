@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: Find out dependencies needed to host BrayanBot
 ---
 
 # Dependencies

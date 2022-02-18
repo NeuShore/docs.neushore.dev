@@ -1,5 +1,6 @@
 ---
 sidebar_place: 3
+description: Third Part Addons & Community Developers
 ---
 # Third Party Addons
 ---

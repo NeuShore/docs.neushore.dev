@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: Our recommendations to how you should host BrayanBot
 ---
 
 # Recomendations
@@ -20,15 +21,15 @@ Given the open-source, extensible and customizable nature as well as it's design
 
 If you know your way around NodeJS and npm, you should consider self-hosting BrayanBot. We offer manual installation instructions, built-in installer and a [Docker Installation Script](https://github.com/BrayanbotDev/BrayanBot/blob/main/install/docker-linux.sh) for those wishing to self-host.
 
-For easy scalability, you might consider [Docker](https://docs.docker.com/engine/reference/commandline/cli/) or [Docker Compose](https://docs.docker.com/compose/). There is also a [Public Docker Image](https://hub.docker.com/repository/docker/brayanbot/brayanbot) available for testing purposes.
+For easy scalability, you might consider [Docker](https://docs.docker.com/engine/reference/commandline/cli/) or [Docker Compose](https://docs.docker.com/compose). There is also a [Public Docker Image](https://hub.docker.com/repository/docker/brayanbot/brayanbot) available for testing purposes.
 
-If you are using a hosting provider, [Using a Hosting Provider](/) is where you should look. We also provide instructions for those using [Selfhosted Pterodactyl Panel](/)
+If you are using a hosting provider, [Using a Hosting Provider](/docs/setup/hosting/pterodactyl#using-a-provider-hosting-company) is where you should look. We also provide instructions for those using [Selfhosted Pterodactyl Panel](/docs/setup/hosting/pterodactyl#installing-brayanbot-on-pterodactyl)
 
 ## Recommended Installation 
 
 ### Operating System
 
-We recommend running BrayanBot on a Linux VPS or Dedicated server. A VPS running Debian or Ubuntu is ideal. You may try and successfully run BrayanBot on a Windows machine, but you will be more likely to face errors due to your Operating System on Windows than you would on Linux. Self-hosting on your personal computer running Windows is possible, but not recommended. We also recommend staying away from Discord Bot hosts, but they are preferred option over buying an entire VPS if you do not have one in your possession. 
+We recommend running BrayanBot on a Linux VPS or Dedicated server. A VPS running Debian or Ubuntu is ideal. You may try and successfully run BrayanBot on a Windows machine, but you will be more likely to face errors due to your Operating System on Windows than you would on Linux. Self-hosting on your personal computer running Windows is possible, but not recommended. We also recommend staying away from Discord Bot hosts, but they are preferred option over buying an entire VPS if you do not have one in your possession.
 ### Specs
 
 BrayanBot is quite lightweight and does not require an entire VPS or a Dedicated server to run on. If you are not running Docker, consider placing BrayanBOt in the corner of an already existing VPS or purchase Discord Bot Hosting for a reasonable price. The recommended specs for BrayanBot are

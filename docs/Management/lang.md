@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: Example language file
 ---
 # Language File
 ---

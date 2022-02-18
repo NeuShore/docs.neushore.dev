@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: Learn how to contribute to BrayanBot, the right way
 ---
 
 # Contibuting
@@ -34,7 +35,7 @@ git clone -b dev https://github.com/BrayanbotDev/BrayanBot.git
 git add <fileName>
 ```
 
-4. Commit your changes with a meaningful message
+4. Commit your changes with a **meaningful message**
 
 ```bash
 git commit -m "<Your commit message here>"
@@ -46,4 +47,4 @@ git commit -m "<Your commit message here>"
 git push origin dev
 ```
 
-And that is all! This will make push your changes to **git** and open a Pull Request on Github. After that, we will review your Pull Request and either merge into the **dev branch** or if your Pull Request is denied, reasons to why it is denied and how to improve the Pull Request next time you would like to make a PR again.
+And that is all! This will make push your changes to **git** and open a **Pull Request** on **Github**. After that, we will review your Pull Request and either merge into the **dev branch** or if your Pull Request is denied, reasons to why it is denied and how to improve the Pull Request next time you would like to make a PR again.

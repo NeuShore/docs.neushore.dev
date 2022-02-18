@@ -50,6 +50,7 @@ And this will run your instance of BrayanBot!
 
 > 💡 Ran into a problem? Join our [support server](https://brayanbot.dev/discord)
 
-## ⚙️ Customizing
-
-To see the instructions on customizing BrayanBot, please see the [Customizing](/docs/Management/customizing) Page of the Wiki.
+## Getting Help
+:::info 💡 Ran into a problem?
+Join our [support server](https://brayanbot.dev/discord) and open a ticket.
+:::
