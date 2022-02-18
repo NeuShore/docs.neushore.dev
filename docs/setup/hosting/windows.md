@@ -55,11 +55,6 @@ move example.config.yml config.yml
 
 <TabItem value="Dev" label="Dev">
 
-:::danger Dev Branch
-If you are interested in receiving updates *as soon as they are out* for the cost of high chance of breaking changes and less stability; you may clone into the **dev** branch instead of **main**. Changes from the dev branch will be *eventually* merged into main, but it is an option for those who like to live on edge.
-You also must keep in mind that using `git` will set up version control for your bot files and will make it harder to update if you have edited default -and tracked- bot files. **Do not** use this branch if you do not know how to use **git**.
-:::
-
 1. Clone the Github Repo
 ```bash
 git clone -b dev https://github.com/BrayanBotDev/BrayanBot.git

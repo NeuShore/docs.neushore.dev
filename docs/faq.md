@@ -4,6 +4,7 @@ desciption: We didn't have an autoresponder, so you got this instead
 ---
 
 # F.A.Q
+
 ---
 
 
@@ -18,7 +19,7 @@ desciption: We didn't have an autoresponder, so you got this instead
 **A:** You should -in theory- be able be able to run BrayanBot on any platform supporting latest NodeJS but we (currently) only provide instructions and support for the following:
 
 - Linux (Debian/Ubuntu/Arch and their derivatives)
-- Windows
+- Windows - not recommended
 - MacOS
 - Selfhosted Pterodactyl
 - Hosting Provider (Discord Bot hosting)
