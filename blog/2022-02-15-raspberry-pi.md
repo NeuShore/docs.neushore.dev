@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 Welcome to this blog! This page will provide instructions on how to install and run BrayanBot on a **Raspberry Pi 400** running Ubuntu 20.04. Interested? Great! Grab your popcorn, drinks, Raspberry Pi and click "Read More" to proceed.
 <!--truncate-->
 
-First and foremost, happy Valentines Day everbody!
+First and foremost, happy Valentines Day everybody!
 If you are single, I will be your company *and* guide today. If not, I will only be your guide, but nevertheless; I am your guide today I hope to provide what you will need to host BrayanBot on a Raspberry Pi 400 running Ubuntu. Certainly not my favorite distribution but nevertheless, it somehow still holds the title of the most popular server distro.
 > *If you would like to read my take on this matter, more about why you should not be using Ubuntu [here](/).*
 
@@ -273,6 +273,6 @@ pm2 start index.js --name brayanbot
 
 ## Final Thoughts
 
->And that's it, that is all you need to do to start hosting BrayanBot without additional hosting costs. Of course, leaving a Raspberry Pi running 24/7 is not the most reliable way of running a service, BUT, using a Raspberry Pi creates an excellent sandbox for you get into using Linux and understanding the basics of running/securing a server without additional costs or risks. Once you feel comfortable with using this new server on your Raspberry Pi, you should consider taking a look at my [Securing your Linux Server](/) guide. As some of our users have decided to purchase VPSes to run BrayanBot, we felt obligated to provide necessary instructions on securing your server. If you find this guide helpful, I'm glad! If you think it was the most unhelpful guide you have ever read, please let me know, so I can improve it. And if you just want to talk Linux, that's fine too! Join our [Support Server](/discord) where we can talk freely.
+>And that's it, that is all you need to do to start hosting BrayanBot without additional hosting costs. Of course, leaving a Raspberry Pi running 24/7 is not the most reliable way of running a service, BUT, using a Raspberry Pi creates an excellent sandbox for you get into using Linux and understanding the basics of running/securing a server without additional costs or risks. Once you feel comfortable with using this new server on your Raspberry Pi, you should consider taking a look at my [Securing your Linux Server](/securing-linux) guide. As some of our users have decided to purchase VPSes to run BrayanBot, we felt obligated to provide necessary instructions on securing your server. If you find this guide helpful, I'm glad! If you think it was the most unhelpful guide you have ever read, please let me know, so I can improve it. And if you just want to talk Linux, that's fine too! Join our [Support Server](/discord) where we can talk freely.
 
 With that said, I really do hope this guide was useful, thank you for your time.

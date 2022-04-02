@@ -1,5 +1,5 @@
 ---
-title: Hadening your Linux Server
+title: Hardening your Linux Server
 description: Because all have to secure our penguins.
 slug: hardening-linux-server
 authors:
