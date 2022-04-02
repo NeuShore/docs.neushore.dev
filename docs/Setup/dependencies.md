@@ -35,4 +35,4 @@ Thanks to [**Windows Subsystem for Linux (WSL)**](https://docs.microsoft.com/en-
 :::
 If you have successfully installed the prerequisites, proceed to [Creating your Bot Application](/docs/Setup/pre-installation).
 
-[^1]: For recommended hardware and specs, see [General Recommendations](/docs/Setup/recomendations)
+[^1]: For recommended hardware and specs, see [General Recommendations](/docs/Setup/recommendations)
