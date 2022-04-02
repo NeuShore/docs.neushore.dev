@@ -9,8 +9,6 @@ If you are proficient in Javascript and willing to extend BrayanBot's functional
 You will likely want to know your way around the basic files of BrayanBot. [Utils.js](https://github.com/BrayanbotDev/BrayanBot/blob/dev/Modules/Utils.js), [AddonHandler.js](https://github.com/BrayanbotDev/BrayanBot/blob/dev/Modules/Handlers/AddonHandler.js), and [AddonTemplate.js](https://github.com/BrayanbotDev/BrayanBot/blob/dev/AddonTemplate.js) are good places to start looking.
 
 
----
-
 ## Getting started
 
 Before you start, you should check if you meet all developer requirements.
