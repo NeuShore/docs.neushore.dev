@@ -37,6 +37,7 @@ function Hero() {
       </div>
 
       <Image img={screenshot} className={clsx("shadow-md", styles.image)} />
+      
     </header>
   );
 }
