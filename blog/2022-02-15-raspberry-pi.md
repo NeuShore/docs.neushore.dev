@@ -120,7 +120,7 @@ For example, if we run the above command on the Raspberry Pi 400, we get the fol
   | Raspberry Pi 2B v1.2 	    |          ARMv7					|
   | Raspberry Pi 2B 	        |          ARMv6					|
   | Raspberry Pi Zero /Zero W | 	       ARMv6					|
- 
+
 We will now download the appropriate NodeJS release from NodeJS downloads page. To host BrayanBot, we will need [NodeJS V16](https://nodejs.org/dist/v16.14.0/) or [NodeJS V17](https://nodejs.org/dist/v17.5.0/)
 
 Once you determine the apporpriate version, for example `node-v14.19.0-linux-armv7l.tar.gz` for a Raspberry Pi with ARMv7 archtechture version, install the relevant package with `wget node-vXX.XX.X-linux-armvXl.tar.gz` (replace X with your node version and architechture) abd extract the file you have downloaded with `tar -xzf node-vXX.XX.X-linux-armvXl.tar.gz`. After downloading, move into the tar you have extracted with `cd node-vXX.XX.X-linux-armvXl` and copy the contents to PATH using `sudo cp -R * /usr/local/`
@@ -158,6 +158,7 @@ sudo dnf install zip unzip wget
 </Tabs>
 
 ### Download and Install BrayanBot
+
 <Tabs>
 <TabItem value="stable" label="Stable">
 
@@ -255,7 +256,9 @@ npm run start
 </Tabs>
 
 ## Power Controls
+
 If you would like to keep the bot running after you log out of your terminal/machine; you may use **PM2**. It will also allow you to have BrayanBot persist between reboots, if you configure it that way.
+
 ### Using PM2 Process Manager
 
 ```bash
@@ -269,7 +272,6 @@ pm2 start index.js --name brayanbot
 - `pm2 restart brayanbot` # Restart the process
 - `pm2 logs brayanbot` # View recent logs as well as a live console
 - `pm2 logs brayanbot --lines 1000 | nc termbin.com 9999` # Export the bot's past logs and paste them to termbin.
-
 
 ## Final Thoughts
 

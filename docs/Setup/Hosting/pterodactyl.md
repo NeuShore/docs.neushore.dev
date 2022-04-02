@@ -3,7 +3,14 @@ sidebar_position: 4
 ---
 
 # Pterodactyl Hosting
+
 ---
+
+
+
+:::warn 
+Pterodactyl is currently **unsupported** and the instructions below are left only for archiving purposes. Please join our [Discord Server](/discord) if you would like to request support with installing BrayanBot on Pterodactyl. The official Pterodactyl Egg is __OUTDATED__.
+:::
 
 [Pterodactyl Panel](https://pterodactyl.io/) is a server management panel that is used by many hosting providers.
 If you are using a Hosting Provider, you should take a look at our Using a Hosting Provider below. This only covers instructions for **self-hosted** Pterodactyl instances.
