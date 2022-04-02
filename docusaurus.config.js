@@ -31,10 +31,12 @@ module.exports = {
         {
           to: "docs/getting-started",
           activeBasePath: "docs",
-          label: "Docs",
+          label: "Documentation",
           position: "left",
         },
         { to: "blog", label: "Blog", position: "left" },
+        { to: "faq", label: "F.A.Q", position: "left" },
+        { to: "support", label: "Support", position: "left" },
         {to: '/discord', label: 'Discord Server', position: 'right'},
         {
           href: "https://github.com/brayanbotdev/brayanbot",

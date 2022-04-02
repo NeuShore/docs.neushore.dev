@@ -5,6 +5,10 @@ module.exports = {
       id: "getting-started",
     },
     {
+      type: "doc",
+      id: "features",
+    },
+    {
       type: "category",
       label: "Bot Setup",
       collapsed: false,
@@ -54,6 +58,14 @@ module.exports = {
           ],
         },
       ],
+    },
+    {
+      type: "doc",
+      id: "faq",
+    },
+    {
+      type: "doc",
+      id: "support",
     },
   ],
 };
