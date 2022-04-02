@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 description: What BrayanBot has to offer
-slug: features
 ---
 
 # Features

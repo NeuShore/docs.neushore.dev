@@ -2,7 +2,7 @@
 id: getting-started
 title: Getting Started
 sidebar_label: Features
-slug: features
+slug: getting-started
 ---
 
 ![GitHub release](https://img.shields.io/github/release/brayanbotdev/brayanbot)
