@@ -8,7 +8,7 @@ sidebar_position: 4
 
 
 
-:::warn 
+:::danger Unsupported!
 Pterodactyl is currently **unsupported** and the instructions below are left only for archiving purposes. Please join our [Discord Server](/discord) if you would like to request support with installing BrayanBot on Pterodactyl. The official Pterodactyl Egg is __OUTDATED__.
 :::
 
