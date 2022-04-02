@@ -1,6 +1,8 @@
 ---
 sidebar_position: 5
 desciption: We didn't have an autoresponder, so you got this instead
+sidebar_label: Frequently Asked Questions
+slug: faq
 ---
 
 # F.A.Q
