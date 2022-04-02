@@ -19,7 +19,6 @@ Before you start, you should check if you meet all developer requirements.
 
 After you confirm that you meet all the requirements you can start developing your first addon.
 
----
 
 ## Creating addon file
 
@@ -79,7 +78,6 @@ Let's describe it in more detail.
   - `color`: Your selected hex color(will be used in default addon start log).
 - `_customConfigs`: This is an object which defines custom configs for your addon. More info below.
 
----
 
 ## Creating custom configs
 
@@ -133,7 +131,6 @@ _customConfigs: {
 
 You are nowdone with basic addon information, it is time to start handling command/events using your config.
 
----
 
 ## Coding your Addon
 
@@ -167,7 +164,6 @@ const { main: addonConfig, lang: addonLang } = customConfig;
 That's everything for base addon code.
 Now it's time to create some commands and event listeners.
 
----
 
 ## Creating Custom Commands
 
@@ -342,8 +338,6 @@ Where
 That's everything you should know about CommandHandler.
 You your Discord.js knowledge and code your command ;-)
 
----
-
 ## Creating Event Listener
 
 Since you know, how to create custom commands, it's time to create your first event listener.
@@ -367,8 +361,6 @@ EventHandler.set("messageDelete", async (bot, message) => {
     message.channel.send(`Message \`${message.content}\` has been deleted!`);
 });
 ```
-
----
 
 **Congratulations!**
 
