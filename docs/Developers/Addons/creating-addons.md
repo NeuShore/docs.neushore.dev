@@ -1,7 +1,7 @@
 ---
 sidebar_place: 1
 description: Learn how to create your own addons
-title: creating-addons
+title: Creating Addons
 ---
 # BrayanBot Addon Development
 

@@ -1,6 +1,7 @@
 ---
 sidebar_place: 2
 description: What are First Party Addons and are they edible
+hide_table_of_contents: true
 ---
 
 # First Party Addons
