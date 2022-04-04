@@ -21,20 +21,15 @@ module.exports = {
             "Setup/Hosting/mac-os",
             "Setup/Hosting/windows",
             "Setup/Hosting/docker",
-          ]
-        }
+          ],
+        },
       ],
     },
     {
       type: "category",
       label: "Bot Management",
       collapsed: true,
-      items: [
-        "Management/customizing",
-        "Management/config",
-        "Management/lang"
-
-      ],
+      items: ["Management/customizing", "Management/config", "Management/lang"],
     },
     {
       type: "category",
@@ -43,6 +38,7 @@ module.exports = {
       items: [
         "Developers/contributing",
         "Developers/template",
+        "Developers/third-party-tos",
         {
           type: "category",
           label: "Addons",
@@ -50,7 +46,7 @@ module.exports = {
           items: [
             "Developers/Addons/creating-addons",
             "Developers/Addons/first-party",
-            "Developers/Addons/third-party"
+            "Developers/Addons/third-party",
           ],
         },
       ],
