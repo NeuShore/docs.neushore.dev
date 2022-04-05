@@ -47,6 +47,7 @@ module.exports = {
       items: [
         "Developers/contributing",
         "Developers/template",
+        "Developers/third-party-tos",
         {
           type: "category",
           label: "Addons",
