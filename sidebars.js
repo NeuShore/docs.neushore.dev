@@ -42,6 +42,14 @@ module.exports = {
     },
     {
       type: "category",
+      label: "First Party Addons",
+      collapsed: true,
+      items: [
+        "Addons/advanced-verification",
+      ],
+    },
+    {
+      type: "category",
       label: "Development",
       collapsed: true,
       items: [
