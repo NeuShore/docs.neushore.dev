@@ -37,13 +37,13 @@ module.exports = {
         { to: "blog", label: "Blog", position: "left" },
         { to: "docs/faq", label: "F.A.Q", position: "left" },
         { to: "support", label: "Support", position: "left" },
-        { to: '/discord', label: 'Discord Server', position: 'right'},
         {
           href: "https://github.com/brayanbotdev/brayanbot",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub Repository",
         },
+        { to: "/discord", className: "header-discord-link", position: "right" },
       ],
     },
     footer: {
@@ -54,7 +54,7 @@ module.exports = {
             {
               label: "FAQ",
               to: "docs/faq",
-            }
+            },
           ],
         },
         {
@@ -84,7 +84,7 @@ module.exports = {
             {
               label: "Discord",
               href: "https://brayanbot.dev/discord",
-            }
+            },
           ],
         },
       ],
