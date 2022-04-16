@@ -8,7 +8,7 @@ slug: getting-started
 ![GitHub release](https://img.shields.io/github/release/brayanbotdev/brayanbot)
 ![GitHub All Releases](https://img.shields.io/github/downloads/brayanbotdev/brayanbot/total)
 
-This documentation describes how you may easily set-up BrayanBot and develop addons.
+This documentation describes how you may easily set-up BrayanBot on multiple platforms and develop your own addons.
 
 :::note
 
