@@ -1,9 +1,11 @@
 ---
 sidebar_position: 1
 description: What BrayanBot has to offer
+slug: features
 ---
 
 # Features
+
 ---
 
 BrayanBot, while not offering too much in commands out-of-the-box; provides robust tools to help you create your own bot to suit your needs.
