@@ -25,28 +25,25 @@ module.exports = {
             "Setup/Hosting/mac-os",
             "Setup/Hosting/windows",
             "Setup/Hosting/docker",
-          ]
-        }
+          ],
+        },
       ],
+    },
+    {
+      type: "doc",
+      id: "updating",
     },
     {
       type: "category",
       label: "Bot Management",
       collapsed: true,
-      items: [
-        "Management/customizing",
-        "Management/config",
-        "Management/lang"
-
-      ],
+      items: ["Management/customizing", "Management/config", "Management/lang"],
     },
     {
       type: "category",
       label: "First Party Addons",
       collapsed: true,
-      items: [
-        "Addons/advanced-verification",
-      ],
+      items: ["Addons/advanced-verification"],
     },
     {
       type: "category",
@@ -63,7 +60,7 @@ module.exports = {
           items: [
             "Developers/Addons/creating-addons",
             "Developers/Addons/first-party",
-            "Developers/Addons/third-party"
+            "Developers/Addons/third-party",
           ],
         },
       ],
