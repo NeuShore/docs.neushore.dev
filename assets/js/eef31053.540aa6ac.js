@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrayanbot_dev=self.webpackChunkbrayanbot_dev||[]).push([[3048],{6038:function(e,n,t){t.r(n);var c=t(7294);n.default=function(){return(0,c.useEffect)((function(){window.location.href="https://discord.gg/ckKVAfr3XX"}),[]),c.createElement("div",null)}}}]);

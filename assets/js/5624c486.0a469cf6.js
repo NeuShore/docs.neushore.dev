@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrayanbot_dev=self.webpackChunkbrayanbot_dev||[]).push([[9331],{4282:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","name":"Windows","count":1,"permalink":"/blog/tags/windows"}')}}]);

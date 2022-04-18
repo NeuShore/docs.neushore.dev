@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrayanbot_dev=self.webpackChunkbrayanbot_dev||[]).push([[8357],{6499:function(e,t,n){n.r(t);var a=n(7294);t.default=function(){return(0,a.useEffect)((function(){window.location.href="/docs/getting-started"}),[]),a.createElement("div",null)}}}]);

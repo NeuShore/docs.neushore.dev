@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrayanbot_dev=self.webpackChunkbrayanbot_dev||[]).push([[6226],{7150:function(e,n,t){t.r(n);var a=t(7294);n.default=function(){return(0,a.useEffect)((function(){window.location.href="/docs/Developers/Addons/creating-addons"}),[]),a.createElement("div",null)}}}]);

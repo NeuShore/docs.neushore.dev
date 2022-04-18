@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrayanbot_dev=self.webpackChunkbrayanbot_dev||[]).push([[3119],{1953:function(e,n,t){t.r(n);var a=t(7294);n.default=function(){return(0,a.useEffect)((function(){window.location.href="/#download"}),[]),a.createElement("div",null)}}}]);

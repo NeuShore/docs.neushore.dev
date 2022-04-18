@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrayanbot_dev=self.webpackChunkbrayanbot_dev||[]).push([[1702],{7229:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","name":"Ubuntu","count":3,"permalink":"/blog/tags/ubuntu"}')}}]);
