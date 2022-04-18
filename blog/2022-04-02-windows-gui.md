@@ -11,7 +11,7 @@ tags: [Windows, Linux, Ubuntu]
 hide_table_of_contents: false
 ---
 
-This page is currently a placeholder as I do not have access to a Windows machine! Will be updated soon, thank you for your patience!
+This page is currently a placeholder as I do not have access to a Windows machine. Will be updated soon, thank you for your patience!
 
 For installation support, consider joining our [Discord Server](/discord).
 
