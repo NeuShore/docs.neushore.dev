@@ -9,7 +9,6 @@ slug: faq
 
 ---
 
-
 **Q:** How can I download BrayanBot?
 
 **A:** BrayanBot could be obtained by either downloading from Github Releases or cloning the Github repository. Users who like to live on edge may download the **dev** branch that is more up to date, but is less stable in return.
@@ -36,6 +35,6 @@ slug: faq
 
 **Q:** Can I use Corebot addons on BrayanBot?
 
-**A:** Short answer is "no." This is due to the fact that Corebot and BrayanBot use their own, seperate utilities, addon handlers and event handlers. However, you may ask
+**A:** Short answer is "no." This is due to the fact that Corebot and BrayanBot use their own, separate utilities, addon handlers and event handlers. However, you may ask a [community developer](/docs/Developers/Addons/) to recreate Corebot addons with BrayanBot compatibility.
 
 ---

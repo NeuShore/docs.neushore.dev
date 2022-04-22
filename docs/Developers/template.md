@@ -16,7 +16,7 @@ Congratulations! You have successfully created a repository using the template. 
 
 :::info
 
-💡 Ran into a problem? 
+💡 Ran into a problem?
 Join our [support server](https://brayanbot.dev/discord) and open a ticket.
 
 :::

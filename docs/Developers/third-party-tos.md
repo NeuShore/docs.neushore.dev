@@ -35,7 +35,7 @@ description: Terms of Conditions for Third Party Developers
 3. All submitted resources must consist primarily of your code. If you are found to be plagiarizing code from elsewhere (other bots, addons, developers and platforms like Github, Stackoverflow etc.) we reserve the right to remove you from the position of a **Community Developer**. You are allowed to use third party or/and licensed code if permission is granted, but you are required to disclose that you have used code from a third party and the original author of the used code.
    - You are not allowed to publish addons explicitly created by a Third Party Developer, regardless of your connection to them.
    - You are responsible for the safety and security of any third party code you have included in your addons.
-4. You are responsible for keeping your codebase clean and free of bugs for the duration of you holding the title of **Community Developer**. Any unmaintained addons must be strictly disclosed to be unmaintained and therefore possibly pronet to bugs or/and vulnerabilities.
+4. You are responsible for keeping your codebase clean and free of bugs for the duration of you holding the title of **Community Developer**. Any unmaintained addons must be strictly disclosed to be unmaintained and therefore possibly prone to bugs or/and vulnerabilities.
 
 ## Our Rights
 
