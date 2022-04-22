@@ -1,117 +1,153 @@
 ---
 sidebar_position: 3
-description: Example language file
----
-# Language File
+description: Example Language file
 ---
 
-``` yaml title="lang.yml" linenums="1"
+# Language File
+
+---
+
+````yaml title="lang.yml"
 General:
-    Help:
-        Embeds:
-            - Title: "Command Info - {command-name}"
-              Description: |-
-                  {command-description}
-                  **Usage**
-                  > `{command-usage}`
-                  **Aliases**
-                  > {command-aliases}
-                  **Slash Command**: \{command-isSlashEnabled}
-              Footer: "{user-tag}"
-              FooterTag: "{user-tag}"
-              Timestamp: true
-    Ping:
-        Embeds:
-            - Author: "{bot-tag}'s Ping"
-              AuthorIcon: "{bot-pfp}"
-              Description: |-
-                  **Bot latency**: {bot-latency}
-                  **API latency**: {api-latency}
-              Footer: "{user-tag}"
-              FooterIcon: "{user-pfp}"
-              Timestamp: true
-    Uptime:
-        Embeds:
-            - Author: "{bot-tag}'s Uptime"
-              AuthorIcon: "{bot-pfp}"
-              Description: |-
-                  > **Current Uptime**: {uptime}
-              Footer: "{user-tag}"
-              FooterIcon: "{user-pfp}"
-              Timestamp: true
-    ServerInfo:
-        Embeds:
-            - Title: "💭 Server Info - {guild-name} [1/2]"
-              Description: |-
-                  • **Name**: {guild-name}
-                  • **Guild ID**: {guild-id}
-                  • **Created-At**: {guild-createdat}
-              Fields:
-                  - Name: 👑 Server Owner
-                    Value: |-
-                        • **Account**: {guild-owner-mention} | {guild-owner-tag}
-                        • **ID**: {guild-owner-id}
-                        • **Created At**: {guild-owner-createdat}
-                  - Name: ⬆️ Server Boost status
-                    Value: |-
-                        • **Boosts**: {guild-boosts} Boosts
-                        • **Guild-Level**: Level {guild-level}
-              Thumbnail: "{guild-icon}"
-              Timestamp: true
-              Footer: "{user-tag}"
-              FooterIcon: "{user-pfp}"
-            - Title: "💭 Server info - {guild-name} [2/2]"
-              Fields:
-                  - Name: 📊 Server Stats
-                    Value: |-
-                        • **Total Channels**: {guild-total-channels}
-                        • **Total Roles**: {guild-total-roles}
-                        • **Total Emojis**: {guild-total-emojis}
-                  - Name: 👪 Server Member Stats
-                    Value: |-
-                        • **Total Humans**: {guild-members}
-                        • **Total Bots**: {guild-bots}
-                        • **Total Members**: {guild-total-members}
-                  - Name: 🤵 Member Status
-                    Value: |-
-                        • **Online Humans**: {guild-online-humans}
-                        • **Idle Humans**: {guild-idle-humans}
-                        • **DND Humans**: {guild-dnd-humans}
-                        • **Offline Humans**: {guild-offline-humans}
-              Timestamp: true
-              Footer: "{user-tag}"
-              FooterIcon: "{user-pfp}"
-    Avatar:
-        Embeds:
-            - AuthorIcon: "{avatar}"
-              Author: "{req-user-tag}"
-              Image: "{avatar}"
-              Footer: "{user-tag}"
-              FooterIcon: "{user-pfp}"
-        Components:
-            "1":
-                - Type: "Button"
-                  Style: "Link"
-                  Label: "Avatar"
-                  Link: "{link}"
+  Help:
+    Embeds:
+      - Title: "Command Info - {command-name}"
+        Description: |-
+          {command-description}
+
+          **Usage**
+          > `{command-usage}`
+          **Aliases**
+          > {command-aliases}
+          **Slash Command**: \{command-isSlashEnabled}
+        Footer: "{user-tag}"
+        FooterTag: "{user-tag}"
+        Timestamp: true
+  Ping:
+    Embeds:
+      - Author: "{bot-tag}'s Ping"
+        AuthorIcon: "{bot-pfp}"
+        Description: |-
+          **Bot latency**: {bot-latency}
+          **API latency**: {api-latency}
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+  Uptime:
+    Embeds:
+      - Author: "{bot-tag}'s Uptime"
+        AuthorIcon: "{bot-pfp}"
+        Description: "> **Current Uptime**: {uptime}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+  ServerInfo:
+    Embeds:
+      - Title: "\U0001F4AD Server Info - {guild-name} [1/2]"
+        Description: |-
+          • **Name**: {guild-name}
+          • **Guild ID**: {guild-id}
+          • **Created-At**: {guild-createdat}
+        Fields:
+          - Name: "\U0001F451 Server Owner"
+            Value: |-
+              • **Account**: {guild-owner-mention} | {guild-owner-tag}
+              • **ID**: {guild-owner-id}
+              • **Created At**: {guild-owner-createdat}
+          - Name: ⬆️ Server Boost status
+            Value: |-
+              • **Boosts**: {guild-boosts} Boosts
+              • **Guild-Level**: Level {guild-level}
+        Thumbnail: "{guild-icon}"
+        Timestamp: true
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+      - Title: "\U0001F4AD Server info - {guild-name} [2/2]"
+        Fields:
+          - Name: "\U0001F4CA Server Stats"
+            Value: |-
+              • **Total Channels**: {guild-total-channels}
+              • **Total Roles**: {guild-total-roles}
+              • **Total Emojis**: {guild-total-emojis}
+          - Name: "\U0001F46A Server Member Stats"
+            Value: |-
+              • **Total Humans**: {guild-members}
+              • **Total Bots**: {guild-bots}
+              • **Total Members**: {guild-total-members}
+          - Name: "\U0001F935 Member Status"
+            Value: |-
+              • **Online Humans**: {guild-online-humans}
+              • **Idle Humans**: {guild-idle-humans}
+              • **DND Humans**: {guild-dnd-humans}
+              • **Offline Humans**: {guild-offline-humans}
+        Timestamp: true
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+  Avatar:
+    Embeds:
+      - AuthorIcon: "{avatar}"
+        Author: "{req-user-tag}"
+        Image: "{avatar}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+    Components:
+      "1":
+        - Type: Button
+          Style: Link
+          Label: Avatar
+          Link: "{link}"
+Admin:
+  Eval:
+    Embeds:
+      - Title: "{bot-username} Eval"
+        Fields:
+          - Name: ⬇️ | Input
+            Value: |-
+              ```js
+              {input}```
+          - Name: ⬆️ | Output
+            Value: |-
+              ```js
+              {output}```
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+
 Presets:
-    NoPermission:
-        Embeds:
-            - Title: Unable to run command
-              Description: |-
-                  You do not have enough permissions to run this command
-                  **Permissions**
-                  > {roles}
-              Footer: "{user-tag}"
-              FooterIcon: "{user-pfp}"
-              Timestamp: true
-              Color: "#edd100"
-    Error:
-        Embeds:
-            - Title: Unable to perform action
-              Description: "> {error}"
-              Footer: "{user-tag}"
-              FooterIcon: "{user-pfp}"
-              Timestamp: true
-              Color: "#ff0800"
-```
+  NoPermission:
+    Embeds:
+      - Title: Unable to run command
+        Description: |-
+          You do not have enough permissions to run this command
+
+          ** **
+        Fields:
+          - Name: Allowed Roles and Users
+            Value: "> {perms}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+        Color: "#edd100"
+  NonCommandChannel:
+    Embeds:
+      - Title: Unable to execute command
+        Description: |-
+          > This command is disabled for this channel.
+
+          ** **
+        Fields:
+          - Name: Allowed Channels
+            Value: "> {channels}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+        Color: "#ff0800"
+  Error:
+    Embeds:
+      - Title: Unable to perform action
+        Description: "> {error}"
+        Footer: "{user-tag}"
+        FooterIcon: "{user-pfp}"
+        Timestamp: true
+        Color: "#ff0800"
+````
