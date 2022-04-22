@@ -35,6 +35,6 @@ slug: faq
 
 **Q:** Can I use Corebot addons on BrayanBot?
 
-**A:** Short answer is "no." This is due to the fact that Corebot and BrayanBot use their own, separate utilities, addon handlers and event handlers. However, you may ask a [community developer](/docs/Developers/Addons/) to recreate Corebot addons with BrayanBot compatibility.
+**A:** Short answer is "no." This is due to the fact that Corebot and BrayanBot use their own, separate utilities, addon handlers and event handlers. However, you may ask a [community developer](/docs/Developers/Addons/third-party) to recreate Corebot addons with BrayanBot compatibility.
 
 ---
