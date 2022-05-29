@@ -23,7 +23,7 @@ Installing BrayanBot is pretty straightforward and can be done in less than 5 st
 <TabItem value="stable" label="Stable">
 
 1. Download the zip file and unzip
-    * Download BrayanBot from [Main Branch](https://github.com/BrayanbotDev/BrayanBot/archive/refs/heads/main.zip), [Github Releases](/) or [Coremart](https://coremart.net/resources/brayanbot-the-future.33/).
+    * Download BrayanBot from [Main Branch](https://github.com/BrayanBot/BrayanBot/archive/refs/heads/main.zip), [Github Releases](/) or [Coremart](https://coremart.net/resources/brayanbot-the-future.33/).
     * Right click on the file and click "Extract"
 
 2. Move into the BrayanBot Directory
@@ -59,7 +59,7 @@ You also must keep in mind that using `git` will set up version control for your
 
 1. Clone the Github Repo
 ```bash
-git clone -b dev https://github.com/BrayanBotDev/BrayanBot.git
+git clone -b dev https://github.com/BrayanBot/BrayanBot.git
 ```
 
 2. Move into the BrayanBot Directory

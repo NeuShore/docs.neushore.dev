@@ -12,7 +12,7 @@ BrayanBot, while not offering too much in commands out-of-the-box; provides robu
 
 - Custom [`Utils.js`](/) to ease interaction with Discord API
 - [**Addon Handler**] to create the infrastructure for [First](/docs/Developers/Addons/first-party) and [Third](/docs/Developers/Addons/third-party) party addons.
-- Our very own [**Event Handler**](https://github.com/BrayanbotDev/BrayanBot/blob/dev/Modules/Handlers/EventHandler.js) to save you from creating your own.
+- Our very own [**Event Handler**](https://github.com/BrayanBot/BrayanBot/blob/dev/Modules/Handlers/EventHandler.js) to save you from creating your own.
 - Installation installations and active support
 - Actively Maintained
 - Always free and open source

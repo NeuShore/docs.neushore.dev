@@ -1,54 +1,57 @@
-import React from "react";
-import clsx from "clsx";
-import filesize from "filesize";
-import useSWR from "swr";
-import Link from "@docusaurus/Link";
-import { FiGithub, FiPackage } from "react-icons/fi";
-import { DiApple, DiLinux, DiWindows } from "react-icons/di";
+import React from "react"
 
-import Headline from "@theme/Headline";
-import styles from "./styles.module.scss";
+import clsx from "clsx"
+import filesize from "filesize"
+import { DiApple, DiLinux, DiWindows } from "react-icons/di"
+import { FiGithub, FiPackage } from "react-icons/fi"
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+import useSWR from "swr"
 
-function useLatestRelease() {
+import Headline from "@site/src/components/Headline"
+
+import styles from "./styles.module.scss"
+
+// @ts-ignore
+const fetcher = (...args: any[]) => fetch(...args).then(res => res.json())
+
+const useLatestRelease = () => {
   const { data, error } = useSWR(
-    `https://api.github.com/repos/brayanbotdev/brayanbot/releases/latest`,
+    `https://api.github.com/repos/BrayanBot/BrayanBot/releases/latest`,
     fetcher
-  );
+  )
 
   return {
     data: data,
     isLoading: !error && !data,
     isError: error,
-  };
-}
-
-function icon(type) {
-  const size = 24;
-
-  switch (type) {
-    case "application/x-apple-diskimage":
-      return <DiApple size={size} />;
-    case "application/x-msdos-program":
-      return <DiWindows size={size} />;
-    case "application/x-debian-package":
-      return <DiLinux size={size} />;
-    default:
-      return <FiPackage size={size} />;
   }
 }
 
-function Download() {
-  const { data } = useLatestRelease();
-  const size = 36;
+const icon = (type: string) => {
+  const size = 24
+
+  switch (type) {
+    case "application/x-apple-diskimage":
+      return <DiApple size={size} />
+    case "application/x-msdos-program":
+      return <DiWindows size={size} />
+    case "application/x-debian-package":
+      return <DiLinux size={size} />
+    default:
+      return <FiPackage size={size} />
+  }
+}
+
+const Download = () => {
+  const { data } = useLatestRelease()
+  const size = 36
 
   return (
     <section id="download" className={styles.download}>
       <div className="container">
         <Headline
           category="Download"
-          title="ARM, Linux, macOS, Windows and Pterodactyl. You name it!"
+          title="ARM, Linux, macOS, Windows, you name it!"
           offset={1}
         />
 
@@ -73,7 +76,7 @@ function Download() {
 
           <div className={clsx("col col--4", styles.info)}>
             <p>
-              The cross-platform source code for Linux, Mac and Windows.
+              The cross-platform source code for Linux, Mac and Windows. 
               ARM devices like Raspberry Pi are supported too!
             </p>
             <div className={styles.platforms}>
@@ -88,7 +91,7 @@ function Download() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Download;
+export default Download

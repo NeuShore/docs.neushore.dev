@@ -6,9 +6,12 @@ description: Our recommendations to how you should host BrayanBot
 # Recomendations
 
 ---
+
 ## Preface
 
-BrayanBot is an advanced discord bot utilizing the latest DiscordJS features (such as slash commands) and protesting the nature of low-quality, closed source Discord Bots while providing you with easy installation and simple customization, as well as extensibility via first or third party addons. Not satisfied? It is also a Bot Base which you can use to shape your own bot.
+BrayanBot is an advanced discord bot utilizing the latest DiscordJS features (such as slash commands & buttons) and protesting the nature of low-quality, closed source Discord Bots while providing you with easy installation and simple customization, as well as extensibility via first or third party addons.
+
+Not satisfied? It is also a bot template which you may use freely to shape your own bot.
 
 ## Available Installation Methods
 
@@ -19,7 +22,7 @@ Given the open-source, extensible and customizable nature as well as it's design
 * Docker / Docker-Compose (Advanced)
 * Using the official Pterodactyl Egg
 
-If you know your way around NodeJS and npm, you should consider self-hosting BrayanBot. We offer manual installation instructions, built-in installer and a [Docker Installation Script](https://github.com/BrayanbotDev/BrayanBot/blob/main/install/docker-linux.sh) for those wishing to self-host.
+If you know your way around NodeJS and a node package manager (such as npm, Yarn or pnpm), you should consider self-hosting BrayanBot. We offer manual installation instructions, built-in installer and a [Docker Installation Script](https://github.com/BrayanBot/BrayanBot/blob/main/install/docker-linux.sh) for those wishing to self-host.
 
 For easy scalability, you might consider [Docker](https://docs.docker.com/engine/reference/commandline/cli/) or [Docker Compose](https://docs.docker.com/compose). There is also a [Public Docker Image](https://hub.docker.com/repository/docker/brayanbot/brayanbot) available for testing purposes.
 
