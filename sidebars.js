@@ -19,7 +19,7 @@ module.exports = {
         {
           type: "category",
           label: "Hosting",
-          collapsed: true,
+          collapsed: false,
           items: [
             "Setup/Hosting/linux",
             "Setup/Hosting/mac-os",

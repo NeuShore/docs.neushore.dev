@@ -9,6 +9,8 @@ slug: updating
 
 Unfortunately, there is not yet an automated updater (nor is there one in our plans) and therefore you will need to update manually. We will do our best to provide you clear and concise instructions BrayanBots to keep your bot up to date, always. As always, feel free to contact us if you need further assistance in updating.
 
+## Updating from v1.3.0 to v1.4.0
+
 ## Updating from v1.2.0 to v1.3.0
 If you are using v1.1.0 or below, you will need to update one by one. We recommend starting fresh with v1.1.0 and then upgrading.
 > Do note that some addons are bound to break on this update. Please contact the __addon developers__ if that is the case.

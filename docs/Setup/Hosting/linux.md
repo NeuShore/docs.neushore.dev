@@ -273,6 +273,7 @@ pm2 start index.js --name brayanbot
 - `pm2 logs brayanbot --lines 1000 | nc termbin.com 9999` # Export the bot's past logs and paste them to termbin.
 
 ## Getting Help
+
 :::info 💡 Ran into a problem?
 Join our [support server](https://brayanbot.dev/discord) and open a ticket.
 :::
