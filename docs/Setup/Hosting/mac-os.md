@@ -22,7 +22,6 @@ To install certain dependencies (like **wget** or the latest version of **curl**
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 ```
 2. Install necessary packages
 
@@ -32,7 +31,7 @@ brew install wget nano curl jq awk
 
 ### 2. Download BrayanBot
 
-The universal bash script below can be used the download the latest version of BrayanBot from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed. Those packages are usually installed by default on most Linux distributions. 
+The universal bash script below can be used the download the latest version of BrayanBot from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed.
 
 ```bash
 #!/bin/bash
