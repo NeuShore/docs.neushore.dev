@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "pnpm"
-    ]
+    ],
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///home/notashelf/Desktop/brayanbot.dev/.github/workflows/deploy.yml"
+    }
 }
