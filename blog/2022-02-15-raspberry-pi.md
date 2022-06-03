@@ -164,7 +164,7 @@ sudo dnf install zip unzip wget
 
 1. Download the zip file and unzip
 ```bash
-wget https://github.com/brayanbotdev/brayanbot/releases/download/latest/brayanbot.zip &
+wget https://github.com/BrayanBot/brayanbot/releases/download/latest/brayanbot.zip &
 unzip brayanbot.zip
 ```
 1. Move into the BrayanBot Directory
@@ -197,7 +197,7 @@ You also must keep in mind that using `git` will set up version control for your
 
 1. Clone the Github Repo
 ```bash
-git clone -b dev https://github.com/BrayanBotDev/BrayanBot.git
+git clone -b dev https://github.com/BrayanBot/BrayanBot.git
 ```
 2. Move into the BrayanBot Directory
 ```bash

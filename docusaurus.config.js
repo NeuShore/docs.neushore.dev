@@ -1,14 +1,22 @@
-module.exports = {
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: "BrayanBot",
   tagline: "A modular Discord bot for your server management needs.",
-  url: "https://brayanbot.dev",
+  url: "https://brayanbot.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "brayanbotdev",
+  organizationName: "brayanbot",
   projectName: "brayanbot.dev",
   themeConfig: {
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    algolia: {
+      appId: 'ZWKC6PVAM8',
+      apiKey: '358f26e3c623aae3ab1f22b39ead3d63',
+      indexName: 'brayanbot',
+      debug: false,
+    },
     colorMode: {
       defaultMode: "dark",
       disableSwitch: false,
@@ -18,7 +26,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/dracula"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
     },
-    image: "img/brayanbot.png",
+    image: "img/logo_circle.png",
     navbar: {
       hideOnScroll: true,
       title: "BrayanBot",
@@ -28,21 +36,11 @@ module.exports = {
         srcDark: "img/brayanbot.png",
       },
       items: [
-        {
-          to: "/docs",
-          activeBasePath: "docs",
-          label: "Documentation",
-          position: "left",
-        },
+        { to: "/docs", activeBasePath: "docs", label: "Documentation", position: "left" },
         { to: "blog", label: "Blog", position: "left" },
         { to: "docs/faq", label: "F.A.Q", position: "left" },
         { to: "support", label: "Support", position: "left" },
-        {
-          href: "https://github.com/brayanbotdev/brayanbot",
-          position: "right",
-          className: "header-github-link",
-          "aria-label": "GitHub Repository",
-        },
+        { href: "https://github.com/brayanbot/brayanbot", position: "right", className: "header-github-link", "aria-label": "GitHub Repository", },
         { to: "/discord", className: "header-discord-link", position: "right" },
       ],
     },
@@ -70,7 +68,7 @@ module.exports = {
             },
             {
               label: "Releases",
-              href: "https://github.com/brayanbotdev/brayanbot/releases",
+              href: "https://github.com/BrayanBot/brayanbot/releases",
             },
           ],
         },
@@ -79,7 +77,7 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/brayanbotdev/brayanbot",
+              href: "https://github.com/BrayanBot/brayanbot",
             },
             {
               label: "Discord",
@@ -98,16 +96,22 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/brayanbotdev/brayanbot.dev/edit/dev/",
+          editUrl: "https://github.com/brayanbot/brayanbot.dev/edit/dev/",
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/brayanbotdev/brayanbot/edit/dev/",
+          editUrl: "https://github.com/brayanbot/brayanbot.dev/edit/dev/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
         },
+        googleAnalytics: {
+          trackingID: "UA-132764481-1",
+          anonymizeIP: true,
+        },
       },
     ],
   ],
-};
+}
+
+module.exports = config

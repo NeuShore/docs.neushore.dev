@@ -9,6 +9,8 @@ slug: updating
 
 Unfortunately, there is not yet an automated updater (nor is there one in our plans) and therefore you will need to update manually. We will do our best to provide you clear and concise instructions BrayanBots to keep your bot up to date, always. As always, feel free to contact us if you need further assistance in updating.
 
+## Updating from v1.3.0 to v1.4.0
+
 ## Updating from v1.2.0 to v1.3.0
 If you are using v1.1.0 or below, you will need to update one by one. We recommend starting fresh with v1.1.0 and then upgrading.
 > Do note that some addons are bound to break on this update. Please contact the __addon developers__ if that is the case.
@@ -19,14 +21,13 @@ As always, start with the following:
 - Backup your **`database.db`**
 - Backup your **`Addons/`** and **`Addon_Configs/`** directories
 
-Then, download the latest BrayanBot update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub](https://github.com/BrayanBotDev/BrayanBot/releases/latest/download/BrayanBot.zip) or [our website](https://brayanbot.dev/#download))
+Then, download the latest BrayanBot update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub](https://github.com/BrayanBot/BrayanBot/releases/latest/download/BrayanBot.zip) or [our website](https://brayanbot.dev/#download))
 
 Extract the downloaded `.zip` file and drag and drop all files except **`example.config.yml`**, **`lang.yml`** and **`commands.yml`**
 
 1. Extract the downloaded `.zip` file and drag and drop all files except **`example.config.yml`**, **`lang.yml`** and **`commands.yml`**
 2. (Optional) Create a new file called `webserver.yml` in the folder called WebServer, located in bot's root directory. Populate it with the following:
-```yml title="webserver.yml
-// highlight-start
+```yml title="webserver.yml"
 Enabled: true
 Port: 80
 Favicon: "favicon.ico"
@@ -54,7 +55,6 @@ Ratelimit:
   # IPs included will bypass Rate Limiting
   BypassIPs:
     - "127.0.0.1" # http://localhost/ | http://127.0.0.1/
-// highlight-end
 ```
 If you have followed this step, do NOT remove the webserver section from your `config.yml`. This is for a later update.
 
@@ -71,7 +71,7 @@ As always, start with the following:
 - Backup your **`database.db`**
 - Backup your **`Addons/`** and **`Addon_Configs/`** directories
 
-Then, download the latest BrayanBot update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub](https://github.com/BrayanBotDev/BrayanBot/releases/latest/download/BrayanBot.zip) or [our website](https://brayanbot.dev/#download))
+Then, download the latest BrayanBot update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub](https://github.com/BrayanBot/BrayanBot/releases/latest/download/BrayanBot.zip) or [our website](https://brayanbot.dev/#download))
 
 Extract the downloaded `.zip` file and drag and drop all files except **`example.config.yml`**, **`lang.yml`** and **`commands.yml`**
 

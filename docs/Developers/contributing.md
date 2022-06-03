@@ -15,7 +15,7 @@ If you are interested in creating your own addons, please take a look at [Creati
 
 For direct contributions to the codebase, please take a look at [Contribution Guidelines](/)
 
-If neither of those interest you, we also highly appreciate all Bug Reports and Feature requests over [Github Issues](https://github.com/BrayanbotDev/BrayanBot/issues).
+If neither of those interest you, we also highly appreciate all Bug Reports and Feature requests over [Github Issues](https://github.com/BrayanBot/BrayanBot/issues).
 
 ### How to make code Changes
 
@@ -24,7 +24,7 @@ If neither of those interest you, we also highly appreciate all Bug Reports and 
 *As we do not take pull requests to the main branch, this step is mandatory*
 
 ```bash
-git clone -b dev https://github.com/BrayanbotDev/BrayanBot.git
+git clone -b dev https://github.com/BrayanBot/BrayanBot.git
 ```
 
 2. Make your changes
