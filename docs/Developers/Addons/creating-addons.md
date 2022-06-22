@@ -127,7 +127,6 @@ Example Configs:
 {
   "config": {
     "type": "yml",
-    "path": `./Addon_Configs/{addon-name}/config.yml`,
     "data": {
       "Enabled": true,
       "Permission": "@everyone"
@@ -135,7 +134,6 @@ Example Configs:
   },
   "lang": {
     "type": "yml",
-    "path": `./Addon_Configs/{addon-name}/Lang.json`,
     "data": {
       "Message": {
         "Content": "👋 Hello from Lang",
@@ -194,7 +192,8 @@ const command = new Command()
   })
   .setRunSlash(async (bot, interaction, options) => {
     // Code for Slash Commands
-  }).registerCommand()
+  })
+  .registerCommand()
 ```
 
 - `Name`: Name of your command.
