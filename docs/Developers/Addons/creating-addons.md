@@ -194,7 +194,7 @@ const command = new Command()
   })
   .setRunSlash(async (bot, interaction, options) => {
     // Code for Slash Commands
-  });
+  }).registerCommand()
 ```
 
 - `Name`: Name of your command.
