@@ -12,9 +12,9 @@ const config = {
   themeConfig: {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     algolia: {
-      appId: 'ZWKC6PVAM8',
-      apiKey: '358f26e3c623aae3ab1f22b39ead3d63',
-      indexName: 'brayanbot',
+      appId: "ZWKC6PVAM8",
+      apiKey: "358f26e3c623aae3ab1f22b39ead3d63",
+      indexName: "brayanbot",
       debug: false,
     },
     colorMode: {
@@ -36,11 +36,27 @@ const config = {
         srcDark: "img/brayanbot.png",
       },
       items: [
-        { to: "/docs", activeBasePath: "docs", label: "Documentation", position: "left" },
+        {
+          type: "docsVersionDropdown",
+          position: "right",
+          dropdownItemsAfter: [{ to: "/versions", label: "All versions" }],
+          dropdownActiveClassDisabled: true,
+        },
+        {
+          to: "/docs",
+          activeBasePath: "docs",
+          label: "Documentation",
+          position: "left",
+        },
         { to: "blog", label: "Blog", position: "left" },
         { to: "docs/faq", label: "F.A.Q", position: "left" },
         { to: "support", label: "Support", position: "left" },
-        { href: "https://github.com/brayanbot/brayanbot", position: "right", className: "header-github-link", "aria-label": "GitHub Repository", },
+        {
+          href: "https://github.com/brayanbot/brayanbot",
+          position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub Repository",
+        },
         { to: "/discord", className: "header-discord-link", position: "right" },
       ],
     },
@@ -97,6 +113,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/brayanbot/brayanbot.dev/edit/dev/",
+          versions: {
+            current: {
+              label: "2.x",
+              path: "2.x",
+              banner: "none",
+            },
+          },
         },
         blog: {
           showReadingTime: true,
