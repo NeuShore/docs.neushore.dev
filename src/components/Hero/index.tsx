@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import useBaseUrl from "@docusaurus/useBaseUrl"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
-import screenshot from "@site/static/img/pages/dark/mockup.png"
+import screenshot from "@site/static/img/mockup.png"
 // @ts-ignore
 import Image from "@theme/IdealImage"
 

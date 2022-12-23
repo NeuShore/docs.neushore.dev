@@ -12,15 +12,17 @@ image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from "@theme/Tabs"
+import TabItem from "@theme/TabItem"
 
 Welcome to this blog! This page will provide instructions on how to install and run BrayanBot on a **Raspberry Pi 400** running Ubuntu 20.04. Interested? Great! Grab your popcorn, drinks, Raspberry Pi and click "Read More" to proceed.
+
 <!--truncate-->
 
 First and foremost, happy Valentines Day everybody!
-If you are single, I will be your company *and* guide today. If not, I will only be your guide, but nevertheless; I am your guide today I hope to provide what you will need to host BrayanBot on a Raspberry Pi 400 running Ubuntu. Certainly not my favorite distribution but nevertheless, it somehow still holds the title of the most popular server distro.
-> *If you would like to read my take on this matter, more about why you should not be using Ubuntu [here](/).*
+If you are single, I will be your company _and_ guide today. If not, I will only be your guide, but nevertheless; I am your guide today I hope to provide what you will need to host BrayanBot on a Raspberry Pi 400 running Ubuntu. Certainly not my favorite distribution but nevertheless, it somehow still holds the title of the most popular server distro.
+
+> _If you would like to read my take on this matter, more about why you should not be using Ubuntu [here](/)._
 
 But I digress, let us proceed with installation steps right away before I steal more of your time.
 
@@ -30,22 +32,23 @@ You can run a website on it, or make a LEGO Tank with it. Or, as any sane person
 ## Installing Ubuntu on our Raspberry Pi
 
 My Raspberry Pi 400 (like many others) came with its own Ubuntu spin, NOOBS operating system. It is a decent Ubuntu derivative that aims to introduce beginners to the basics of Linux but it also comes with Desktop Environment, which we do not need. That is exactly why we will be overwriting NOOBS with Ubuntu using this handy tool called [Raspberry Imager](https://www.raspberrypi.com/software/). It can be installed on Windows MacOS and Ubuntu from downloads page. Arch Linux users may install it from the AUR using `yay -S rpi-imager` or `yay -S rpi-imager-bin`. Install Imager and run it for the first time. It will look like this:<br/><br/>
-![Imager](../assets/imager.png)<br/><br/>
+![Imager](./img/imager.png)<br/><br/>
 We will be choosing our operating system and storage medium, but before that I would like to talk about my personal recommendations.<br/><br/>
+
 > Raspberry Pi 400 came with a 16GB SD card, which after around 2 weeks of use time; has proven itself to be insultingly low. If you are planning to use your Pi only to host BrayanBot, 16GB is perfectly enough; but if you have other awesome projects in mind, you might want to consider a 32 or 64 GB card.
 
 Regardless of your choice, choose your Operating System under the **Choose OS** tab.
-For this guide, we will be going with Ubuntu 20.04 Server (64 Bit) as our operating system but depending on your preferences, you may want to go with a different version of Ubuntu or an entirely different Operating System. For those sick of Ubuntu  Arch Linux is an excellent alternative, however, Manjaro may be a temporary stepping stone as installing Arch linux on a Raspberry Pi is relatively difficulty for a newbie.<br/>
+For this guide, we will be going with Ubuntu 20.04 Server (64 Bit) as our operating system but depending on your preferences, you may want to go with a different version of Ubuntu or an entirely different Operating System. For those sick of Ubuntu Arch Linux is an excellent alternative, however, Manjaro may be a temporary stepping stone as installing Arch linux on a Raspberry Pi is relatively difficulty for a newbie.<br/>
 
-![Ubuntu 20.04](../assets/os-2.png)
+![Ubuntu 20.04](./img/os-2.png)
 
 Once you choose your Operating System, proceed to choosing your storage medium. I have used an 32 GB SD card in this installation but you may go as low as 16GB (any lesser might cause you problems) for this project. There are no upper limits to storage, you might as well buy a 1TB SD Card and use your Raspberry Pi as a desktop computer. Go wild!
 
-![Settings](../assets/os-3.png)
+![Settings](./img/os-3.png)
 
 Next up, is the most important step; configuring your SSH & Network connections.
 
-![SSH & Network Configuration](../assets/os-4.png)
+![SSH & Network Configuration](./img/os-4.png)
 
 Things to note here:
 
@@ -62,6 +65,7 @@ Things to note here:
 > This will create your user with sudo permissions and desired password. In this example, **raf** is my username and it is what I will log in to the server with.
 
 **Configure Wifi Setting**
+
 > Second most important setting is your Wifi. You may be planning to use your Pi connected to the internet with a cable, but if your Raspberry also has a single ethernet port like mine; you will want to use that port for a cable between your PC and Raspberry, so you can SSH locally. In this example **SSID** is the name of my Wifi network.
 
 **Set locale settings**
@@ -79,27 +83,31 @@ Start by connecting the ethernet cable from your computer to your Raspberry Pi. 
 I already have a SSH configuration on my device and I normally use it to connect easily, but as we are intalling a fresh server onto our Raspberry Pi; you will need to set up SSH for the first time. To do that, you need to SSH into the server! How to do that, you ask? Well that's simple, we have already configured our credentials for SSH and we can use those credentials to SSH into our Pi easily. Lets open the command line (or if you are on Windows, a terminal emulator like [Ki[Putty](/) or Powershell) and SSH into the server using our username and password.
 
 **Using Terminal**
+
 ```bash
 ssh raf@raspberry.local
 ```
 
 This will prompt you to enter your password, which you have set during the installation. Enter your password, put on your hoodie and whisper:
-*"I'm in"*
+_"I'm in"_
 Because that was the hard part! We have successfully made it into the server.
 
 **Using Putty**<br/>
-![Settings](../assets/putty.png)
-<br/>
+![Settings](./img/putty.png)
 
-Hit open and connect to the server. You may -most probably will- see a warning about fingerprints. Hit yes, this will add your Raspberry Pi's fingerprint to your computer's trusted hosts and will not show up again. After that, you will be connected to your server. Unfortunately if you have used Putty, you do not get to put on a hoodie and whisper *"I'm in"* but it is a perfect time to consider switching to Linux as your operating system! No pressure.
+<br />
+
+Hit open and connect to the server. You may -most probably will- see a warning about fingerprints. Hit yes, this will add your Raspberry Pi's fingerprint to your computer's trusted hosts and will not show up again. After that, you will be connected to your server. Unfortunately if you have used Putty, you do not get to put on a hoodie and whisper _"I'm in"_ but it is a perfect time to consider switching to Linux as your operating system! No pressure.
 
 ## Installing NodeJS
 
 First and most importantly, update your packages.
+
 ```bash
 sudo apt update && sudo apt upgrade
 ```
-Then, you would normally run something like `sudo apt install nodejs npm` but NO! Since Ubuntu is a distro known for [leaving their packages outdated](/) the NodeJS from `apt install` is not the one we need. There are many third party repositories, one of which you may choose to install NodeJS but as the "third party" in the name indicates; they are not *always* trustable and thus, we will install it the *right way*.
+
+Then, you would normally run something like `sudo apt install nodejs npm` but NO! Since Ubuntu is a distro known for [leaving their packages outdated](/) the NodeJS from `apt install` is not the one we need. There are many third party repositories, one of which you may choose to install NodeJS but as the "third party" in the name indicates; they are not _always_ trustable and thus, we will install it the _right way_.
 
 The Raspberry Pi runs off the ARM architecture and as of the writing of this article, NodeJS releases compiled Linux binaries for ARMv6, ARMv7 and ARMv8 architectures, all of which you may find on their website
 
@@ -107,19 +115,19 @@ To find out which architecture your Raspberry Pi is running on, run the followin
 
 `uname -m`
 
-For example, if we run the above command on the Raspberry Pi 400, we get the following output. 
+For example, if we run the above command on the Raspberry Pi 400, we get the following output.
 
 `armv7l`
 
-*Below, you will find a list of system architechtures for common Pi models but it is always a safe bet to check with `uname -m` as it may differ between devices despite sharing the same model number*
+_Below, you will find a list of system architechtures for common Pi models but it is always a safe bet to check with `uname -m` as it may differ between devices despite sharing the same model number_
 
-  |        Board Name         |       Architechture     |
-  | :-----------------------: | :---------------------: |
-  | Raspberry Pi 400 	        |          ARMv7          |
-  | Raspberry Pi 3 /3B+ 	    |          ARMv7					|
-  | Raspberry Pi 2B v1.2 	    |          ARMv7					|
-  | Raspberry Pi 2B 	        |          ARMv6					|
-  | Raspberry Pi Zero /Zero W | 	       ARMv6					|
+|        Board Name         | Architechture |
+| :-----------------------: | :-----------: |
+|     Raspberry Pi 400      |     ARMv7     |
+|    Raspberry Pi 3 /3B+    |     ARMv7     |
+|   Raspberry Pi 2B v1.2    |     ARMv7     |
+|      Raspberry Pi 2B      |     ARMv6     |
+| Raspberry Pi Zero /Zero W |     ARMv6     |
 
 We will now download the appropriate NodeJS release from NodeJS downloads page. To host BrayanBot, we will need [NodeJS V16](https://nodejs.org/dist/v16.14.0/) or [NodeJS V17](https://nodejs.org/dist/v17.5.0/)
 
@@ -137,7 +145,7 @@ Finally, we are ready to download and install BrayanBot
 <TabItem value="debian" label="Debian/Ubuntu">
 
 ```bash
-sudo apt install zip unzip wget 
+sudo apt install zip unzip wget
 ```
 
 </TabItem>
@@ -163,62 +171,86 @@ sudo dnf install zip unzip wget
 <TabItem value="stable" label="Stable">
 
 1. Download the zip file and unzip
+
 ```bash
 wget https://github.com/BrayanBot/brayanbot/releases/download/latest/brayanbot.zip &
 unzip brayanbot.zip
 ```
+
 1. Move into the BrayanBot Directory
+
 ```bash
 cd BrayanBot
 ```
-3. Copy the example config to the main `config.yml` 
+
+3. Copy the example config to the main `config.yml`
+
 ```bash
 cp example.config.yml config.yml # cp is a built-in Linux command for copying files
 ```
+
 **or if you would like to simply rename the file**
+
 ```bash
 mv example.config.yml config.yml # mv is a built-in Linux command for moving files
 ```
+
 4. Edit your `config.yml`
+
 ```bash
 nano config.yml
 ```
+
 **or**
+
 ```bash
 vim config.yml # Imagine using vim
 ```
+
 </TabItem>
 <TabItem value="Dev" label="Dev">
 
 :::danger Dev Branch
-If you are interested in receiving updates *as soon as they are out* for the cost of high chance of breaking changes and less stability; you may clone into the **dev** branch instead of **main**. Changes from the dev branch will be *eventually* merged into main, but it is an option for those who like to live on edge.
+If you are interested in receiving updates _as soon as they are out_ for the cost of high chance of breaking changes and less stability; you may clone into the **dev** branch instead of **main**. Changes from the dev branch will be _eventually_ merged into main, but it is an option for those who like to live on edge.
 You also must keep in mind that using `git` will set up version control for your bot files and will make it harder to update if you have edited default -and tracked- bot files. **Do not** use this branch if you do not know how to use **git**.
 :::
 
 1. Clone the Github Repo
+
 ```bash
 git clone -b dev https://github.com/BrayanBot/BrayanBot.git
 ```
+
 2. Move into the BrayanBot Directory
+
 ```bash
 cd BrayanBot
 ```
-3. Copy the example config to the main `config.yml` 
+
+3. Copy the example config to the main `config.yml`
+
 ```bash
-cp example.config.yml config.yml 
+cp example.config.yml config.yml
 ```
+
 **or if you would like to rename the file instead of copying**
+
 ```bash
 mv example.config.yml config.yml
 ```
+
 4. Edit your `config.yml`
+
 ```bash
 nano config.yml
 ```
+
 **or**
+
 ```bash
 vim config.yml
 ```
+
 </TabItem>
 </Tabs>
 
@@ -228,14 +260,19 @@ vim config.yml
 <TabItem value="yarn" label="Yarn">
 
 1. Install Yarn
+
 ```bash
 sudo npm i -g yarn
 ```
+
 2. Install Required dependencies
+
 ```bash
 yarn
 ```
+
 3. Start the Bot
+
 ```bash
 yarn start
 ```
@@ -244,10 +281,13 @@ yarn start
 <TabItem value="npm" label="NPM">
 
 1. Install Required dependencies
+
 ```bash
 npm install
 ```
+
 2. Start the Bot
+
 ```bash
 npm run start
 ```
@@ -275,6 +315,6 @@ pm2 start index.js --name brayanbot
 
 ## Final Thoughts
 
->And that's it, that is all you need to do to start hosting BrayanBot without additional hosting costs. Of course, leaving a Raspberry Pi running 24/7 is not the most reliable way of running a service, BUT, using a Raspberry Pi creates an excellent sandbox for you get into using Linux and understanding the basics of running/securing a server without additional costs or risks. Once you feel comfortable with using this new server on your Raspberry Pi, you should consider taking a look at my [Securing your Linux Server](/blog/hardening-linux-server) guide. As some of our users have decided to purchase VPSes to run BrayanBot, we felt obligated to provide necessary instructions on securing your server. If you find this guide helpful, I'm glad! If you think it was the most unhelpful guide you have ever read, please let me know, so I can improve it. And if you just want to talk Linux, that's fine too! Join our [Support Server](/discord) where we can talk freely.
+> And that's it, that is all you need to do to start hosting BrayanBot without additional hosting costs. Of course, leaving a Raspberry Pi running 24/7 is not the most reliable way of running a service, BUT, using a Raspberry Pi creates an excellent sandbox for you get into using Linux and understanding the basics of running/securing a server without additional costs or risks. Once you feel comfortable with using this new server on your Raspberry Pi, you should consider taking a look at my [Securing your Linux Server](/blog/hardening-linux-server) guide. As some of our users have decided to purchase VPSes to run BrayanBot, we felt obligated to provide necessary instructions on securing your server. If you find this guide helpful, I'm glad! If you think it was the most unhelpful guide you have ever read, please let me know, so I can improve it. And if you just want to talk Linux, that's fine too! Join our [Support Server](/discord) where we can talk freely.
 
 With that said, I really do hope this guide was useful, thank you for your time.

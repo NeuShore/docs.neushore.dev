@@ -1,6 +1,6 @@
 <h1 align="center">
     <p align="center">Website</p>
-    <a href="https://brayanbot.dev"><img src="./static/img/pages/website-mockup.png" alt="Website"></a>
+    <a href="https://brayanbot.dev"><img src="./static/img/website-mockup.png" alt="Website"></a>
 </h1>
 
 <p align="center">
