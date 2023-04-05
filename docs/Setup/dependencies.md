@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: Find out dependencies needed to host BrayanBot
+description: Find out dependencies needed to host Proxima
 ---
 
 # Dependencies
@@ -9,7 +9,7 @@ description: Find out dependencies needed to host BrayanBot
 
 ## Global Dependencies (Windows/Linux/MacOS)
 
-First and foremost, you will require the following to even install BrayanBot
+First and foremost, you will require the following to even install Proxima
 
 - A machine[^1] (VPS, Dedicated Machine)
 - A text editor - Visual Studio Code is recommended
@@ -25,7 +25,7 @@ Regardless of your operating system, you will need those dependencies on your ho
 
 ## Docker Dependencies (Linux)
 
-If you are using Docker to host BrayanBot, you will also need
+If you are using Docker to host Proxima, you will also need
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker-Compose](https://docs.docker.com/compose/install/)

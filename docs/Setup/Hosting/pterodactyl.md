@@ -9,13 +9,13 @@ sidebar_position: 4
 
 
 :::danger Unsupported!
-Pterodactyl is currently **unsupported** and the instructions below are left only for archiving purposes. Please join our [Discord Server](/discord) if you would like to request support with installing BrayanBot on Pterodactyl. The official Pterodactyl Egg is __OUTDATED__.
+Pterodactyl is currently **unsupported** and the instructions below are left only for archiving purposes. Please join our [Discord Server](/discord) if you would like to request support with installing Proxima on Pterodactyl. The official Pterodactyl Egg is __OUTDATED__.
 :::
 
 [Pterodactyl Panel](https://pterodactyl.io/) is a server management panel that is used by many hosting providers.
 If you are using a Hosting Provider, you should take a look at our Using a Hosting Provider below. This only covers instructions for **self-hosted** Pterodactyl instances.
 
-## Installing BrayanBot on Pterodactyl
+## Installing Proxima on Pterodactyl
 
 ### Self-Hosted Pterodactyl
 Start by downloading our [Official Pterodactyl Egg](/) and create a server on your Pterodactyl Panel using the Pterodactyl Egg. (Video Instructions Below)
@@ -45,7 +45,7 @@ The Pterodactyl Egg allows you to customize your bot's settings directly from th
 
 Using a Provider is _not recommended_ due to the nature of most hosting providers and the scope of control you will have on your machine. However if you really would like to use a hosting provider (probably because it's cheaper) make sure that their **NodeJS** version is **16.6.0** or higher.
 
-We recommend [Revivenode](https://revivenode.com/discord.html) to host BrayanBot.
+We recommend [Revivenode](https://revivenode.com/discord.html) to host Proxima.
 
 #### Installation
 
@@ -59,5 +59,5 @@ If you have customized the source code of the bot or would like to use the [unst
 
 ## Getting Help
 :::info 💡 Ran into a problem?
-Join our [support server](https://brayanbot.dev/discord) and open a ticket.
+Join our [support server](https://neushore.dev/discord) and open a ticket.
 :::

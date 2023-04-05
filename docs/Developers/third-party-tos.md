@@ -7,7 +7,7 @@ description: Terms of Conditions for Third Party Developers
 
 ---
 
-- "We", "Us", "Our" refer to BrayanBot Development Team
+- "We", "Us", "Our" refer to Proxima Development Team
 - "You", "Your" refer to the Community Developers
 - "Third Party Developers" refer to any developers who are not in contact with us and have not read this document.
 
@@ -19,13 +19,13 @@ description: Terms of Conditions for Third Party Developers
 2. Do not publicly call out any users or developers in the event of a dispute or conflict between two parties. Contact us instead,
 3. Community developers are not to create their own addon servers until they reach an amount of 5 free addons,
    - This is to prevent a bloated amount of public servers from popping up and allowing community members to personally experience a developer's talents
-4. If you have an already existing server, you are allowed -but not obliged- to use said server for your BrayanBot addons after fulfilling requirements from rule #3
+4. If you have an already existing server, you are allowed -but not obliged- to use said server for your Proxima addons after fulfilling requirements from rule #3
 5. You are not allowed to publish addons explicitly made another Third Party Developer under any conditions.
 6. You are only allowed to provide support for your resources on the following platforms:
-   - BrayanBot Discord Server
+   - Proxima Discord Server
    - Your own support server after meeting the requirements to create one
    - Discord Private Messages
-7. Leaving the BrayanBot main Discord server will be treated as resignation and any resources created by you will be taken down from any official lists they were included in.
+7. Leaving the Proxima main Discord server will be treated as resignation and any resources created by you will be taken down from any official lists they were included in.
    - You, for the period of time you hold the title of **Community Developer** and benefit from said title, are bound by this agreement and are required to follow terms listed within this document.
 
 ## Resources Submitted
@@ -47,7 +47,7 @@ description: Terms of Conditions for Third Party Developers
 ## Your Rights
 
 1. You, naturally, reserve the right to resign from your position **Community Developer**, forfeiting all benefits coming from said position,
-2. While BrayanBot Development Team is fitting the definition of organizations engaged in **professional or commercial activity** as stated by the GDPR, <u>we do not</u> collect any Data from our users for commercial purposes and therefore are not bound by GDPR, however, you as a Community Developer, are unofficially eligible for requesting your data,
+2. While Proxima Development Team is fitting the definition of organizations engaged in **professional or commercial activity** as stated by the GDPR, <u>we do not</u> collect any Data from our users for commercial purposes and therefore are not bound by GDPR, however, you as a Community Developer, are unofficially eligible for requesting your data,
 3. You may inquire about the usage of collected information and how they are processed, anytime for any reason, however;
    - You must keep in mind that we get to choose the scope of the information disclosed ensuing the inquiry,
    - Any attempts to abuse this right may result in the temporary withdrawal of this clause

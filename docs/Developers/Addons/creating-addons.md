@@ -4,11 +4,11 @@ description: Learn how to create your own addons
 title: Creating Addons
 ---
 
-# BrayanBot Addon Development
+# Proxima Addon Development
 
-If you are proficient in Javascript and willing to extend BrayanBot's functionality; you are in luck! BrayanBot comes with an extensive Addon handler, allowing you to easily interact with BrayanBot without having to edit the source code and breaking upstream. This guide will go over the basics of creating your own addon, but it is not a [Discord.JS guide](https://discord.js.org/#/docs/) and will not substitute one. You are advised to be proficient in JavaScript, Node.JS and Discord.JS before creating an addon. But even if you are not, this may be a good starting point.
+If you are proficient in Javascript and willing to extend Proxima's functionality; you are in luck! Proxima comes with an extensive Addon handler, allowing you to easily interact with Proxima without having to edit the source code and breaking upstream. This guide will go over the basics of creating your own addon, but it is not a [Discord.JS guide](https://discord.js.org/#/docs/) and will not substitute one. You are advised to be proficient in JavaScript, Node.JS and Discord.JS before creating an addon. But even if you are not, this may be a good starting point.
 
-You will likely want to know your way around the basic files of BrayanBot. [Utils.js](https://github.com/BrayanBot/BrayanBot/blob/dev/Modules/Utils.js), [AddonHandler.js](https://github.com/BrayanBot/BrayanBot/blob/dev/Modules/Handlers/AddonHandler.js), and [AddonTemplate.js](https://github.com/BrayanBot/BrayanBot/blob/dev/AddonTemplate.js) are good places to start looking.
+You will likely want to know your way around the basic files of Proxima. [Utils.js](https://github.com/NeuShore/Proxima/blob/dev/Modules/Utils.js), [AddonHandler.js](https://github.com/NeuShore/Proxima/blob/dev/Modules/Handlers/AddonHandler.js), and [AddonTemplate.js](https://github.com/NeuShore/Proxima/blob/dev/AddonTemplate.js) are good places to start looking.
 
 > ## Helpful Resources for starters
 
@@ -164,7 +164,7 @@ module.exports.run = async (bot, customConfig) => {
 
 ## Creating Custom Commands
 
-BrayanBot Command Handler is very advanced and allows you to define multiple things, such as command aliases, permissions, allowed channels and more.
+Proxima Command Handler is very advanced and allows you to define multiple things, such as command aliases, permissions, allowed channels and more.
 Using the config handler, you can create configurable values.
 
 **Use below code to create you custom command:**

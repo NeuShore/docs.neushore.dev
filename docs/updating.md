@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
-desciption: Instructions on how to Update BrayanBot
+desciption: Instructions on how to Update Proxima
 sidebar_label: Update Guide
 slug: updating
 ---
 
-# Updating BrayanBot
+# Updating Proxima
 
-Unfortunately, there is not yet an automated updater (nor is there one in our plans) and therefore you will need to update manually. We will do our best to provide you clear and concise instructions BrayanBots to keep your bot up to date, always. As always, feel free to contact us if you need further assistance in updating.
+Unfortunately, there is not yet an automated updater (nor is there one in our plans) and therefore you will need to update manually. We will do our best to provide you clear and concise instructions Proximas to keep your bot up to date, always. As always, feel free to contact us if you need further assistance in updating.
 
 ## Updating from v1.3.0 to v1.4.0
 
@@ -26,7 +26,7 @@ Delete everything except the following files and directories:
 - `database.db`
 - `Addons/` and `Addon_Configs/` directories
 
-Then, download the latest BrayanBot update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub](https://github.com/BrayanBot/BrayanBot/releases/latest/download/BrayanBot.zip) or [our website](https://brayanbot.dev/#download))
+Then, download the latest Proxima update from a platform of your choice ([MC-Market](https://www.mc-market.org/proxima), [GitHub](https://change-me.raf/) or [our website](https://neushore.dev/))
 
 Extract the downloaded `.zip` file and drag and drop all files except **`example.config.yml`**, **`lang.yml`** and **`commands.yml`**
 
@@ -40,11 +40,11 @@ Extract the downloaded `.zip` file and drag and drop all files except **`example
 -  EndPoints:
 -    - Type: "URL"
 -      EndPoint: "/"
--      URL: "https://brayanbot.dev/"
+-      URL: "https://neushore.dev/"
 -
 -    - Type: "URL"
 -      EndPoint: "/discord"
--      URL: "https://brayanbot.dev/discord"
+-      URL: "https://neushore.dev/discord"
 -
 -    - Type: "Page"
 -      EndPoint: "/view/page"
@@ -73,11 +73,11 @@ Favicon: "favicon.ico"
 EndPoints:
   - Type: "URL"
     EndPoint: "/"
-    URL: "https://brayanbot.dev/"
+    URL: "https://neushore.dev/"
 
   - Type: "URL"
     EndPoint: "/changedValue"
-    URL: "https://brayanbot.dev/thisValueWasChanged"
+    URL: "https://neushore.dev/thisValueWasChanged"
 
   - Type: "Page"
     EndPoint: "/view/page"
@@ -114,9 +114,9 @@ Ratelimit:
 +  Activities:
 +    - Text: "discord.js"
 +      Type: "PLAYING"
-+    - Text: "BrayanBot.dev"
++    - Text: "neushore.dev"
 +      Type: "STREAMING"
-+      URL: "https://brayanbot.dev"
++      URL: "https://neushore.dev"
 +    - Text: "for help"
 +      Type: "LISTENING"
 +    - Text: "{guild-members} members"
@@ -273,7 +273,7 @@ As always, start with the following:
 - Backup your **`database.db`**
 - Backup your **`Addons/`** and **`Addon_Configs/`** directories
 
-Then, download the latest BrayanBot update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub](https://github.com/BrayanBot/BrayanBot/releases/latest/download/BrayanBot.zip) or [our website](https://brayanbot.dev/#download))
+Then, download the latest Proxima update from a platform of your choice ([MC-Market](https://www.mc-market.org/proxima), [GitHub]({change-me}) or [our website](https://neushore.dev/))
 
 Extract the downloaded `.zip` file and drag and drop all files except **`example.config.yml`**, **`lang.yml`** and **`commands.yml`**
 
@@ -286,11 +286,11 @@ Favicon: "favicon.ico"
 EndPoints:
   - Type: "URL"
     EndPoint: "/"
-    URL: "https://brayanbot.dev/"
+    URL: "https://neushore.dev/"
 
   - Type: "URL"
     EndPoint: "/discord"
-    URL: "https://brayanbot.dev/discord"
+    URL: "https://neushore.dev/discord"
 
   - Type: "Page"
     EndPoint: "/view/page"
@@ -323,7 +323,7 @@ As always, start with the following:
 - Backup your **`database.db`**
 - Backup your **`Addons/`** and **`Addon_Configs/`** directories
 
-Then, download the latest BrayanBot update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub](https://github.com/BrayanBot/BrayanBot/releases/latest/download/BrayanBot.zip) or [our website](https://brayanbot.dev/#download))
+Then, download the latest Proxima update from a platform of your choice ([MC-Market](https://www.mc-market.org/resources/23003/download), [GitHub]({change-me}) or [our website](https://neushore.dev/))
 
 Extract the downloaded `.zip` file and drag and drop all files except **`example.config.yml`**, **`lang.yml`** and **`commands.yml`**
 

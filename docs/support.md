@@ -10,15 +10,15 @@ slug: support
 
 ## Basic Etiquette
 
-You, during the time frame you are using BrayanBot, are eligible **but not entitled** for support. We may refuse to provide support anytime, for any reason. You are expected to understand and act accordingly.
+You, during the time frame you are using Proxima, are eligible **but not entitled** for support. We may refuse to provide support anytime, for any reason. You are expected to understand and act accordingly.
 
 ### Usage Support
 
-We will do our best to answer your questions about basic usage of BrayanBot; but we expect you to be patient as we are human beings and all developers/maintainers/support team members have their own personal schedule. We may not respond instantly, and you should not repeatedly ping any of those providing support for instant answers.
+We will do our best to answer your questions about basic usage of Proxima; but we expect you to be patient as we are human beings and all developers/maintainers/support team members have their own personal schedule. We may not respond instantly, and you should not repeatedly ping any of those providing support for instant answers.
 
 ### Programming Support
 
-As BrayanBot is open-source and contribution-driven, we may provide support for programming. Again, we may not respond immediately and we expect you to to respect our schedules.
+As Proxima is open-source and contribution-driven, we may provide support for programming. Again, we may not respond immediately and we expect you to to respect our schedules.
 
 ### Denial of Support
 

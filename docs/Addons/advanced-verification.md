@@ -7,7 +7,7 @@ description: Documentation for Advanced Verification By Zorino#1110
 
 ## Introduction
 
-Advanced Verify is a [First-Party](https://brayanbot.dev/docs/Developers/Addons/First-Party) addon with keeping bots or similar malicious applications away from your server. 
+Advanced Verify is a [First-Party](https://neushore.dev/docs/Developers/Addons/First-Party) addon with keeping bots or similar malicious applications away from your server. 
 
 It provides 5 separate methods to verification:
 - Chat
@@ -50,7 +50,7 @@ The available verification methods and their descriptions are as follows.
 ### Website (Discord OAuth2)
 1. Go to [Discord Developer Application](https://discord.com/developers/applications).
 
-2. Select your BrayanBot's Application.
+2. Select your Proxima's Application.
 
 3. Go to `OAuth2` -> `General` tab 
 
@@ -124,7 +124,7 @@ Verification:
     RolesToTake:
       - DJ
   Website:
-    # https://brayanbot.dev/docs/First-Party-Addons/Advanced-Verification#website-discord-oauth2
+    # https://neushore.dev/docs/First-Party-Addons/Advanced-Verification#website-discord-oauth2
     ClientID: APPLICATION-CLIENT-ID
     ClientSecret: APPLICATION-CLIENT-SECRET
     RedirectURL: APPLICATION-CLIENT-OAUTH2-REDIRECT-URL

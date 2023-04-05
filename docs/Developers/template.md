@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: Build your own BrayanBot, in 4 easy steps
+description: Build your own Proxima, in 4 easy steps
 ---
 
 # Using the Template
@@ -12,11 +12,11 @@ description: Build your own BrayanBot, in 4 easy steps
 3. Choose repository's visibility.
 4. Click **Create repository from template**.
 
-Congratulations! You have successfully created a repository using the template. Do keep in mind that using the template will not allow you to make pushes into the BrayanBot repository as `git clone` would.
+Congratulations! You have successfully created a repository using the template. Do keep in mind that using the template will not allow you to make pushes into the Proxima repository as `git clone` would.
 
 :::info
 
 💡 Ran into a problem?
-Join our [support server](https://brayanbot.dev/discord) and open a ticket.
+Join our [support server](https://neushore.dev/discord) and open a ticket.
 
 :::

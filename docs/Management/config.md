@@ -18,9 +18,9 @@ Embeds:
   Color: "2f3136"
 
 Branding:
-  Name: "BrayanBot"
+  Name: "Proxima"
   Logo: "https://avatars.githubusercontent.com/u/99198112?s=200&v=4"
-  Link: "https://brayanbot.dev"
+  Link: "https://neushore.dev"
 
 WebServer:
   Enabled: true
@@ -29,11 +29,11 @@ WebServer:
   EndPoints:
     - Type: "URL"
       EndPoint: "/"
-      URL: "https://brayanbot.dev/"
+      URL: "https://neushore.dev/"
 
     - Type: "URL"
       EndPoint: "/discord"
-      URL: "https://brayanbot.dev/discord"
+      URL: "https://neushore.dev/discord"
 
     - Type: "Page"
       EndPoint: "/view/page"

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: About to host BrayanBot? Stop, read this first
+description: About to host Proxima? Stop, read this first
 ---
 # Pre Installation
 

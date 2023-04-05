@@ -9,15 +9,15 @@ slug: faq
 
 ---
 
-**Q:** How can I download BrayanBot?
+**Q:** How can I download Proxima?
 
-**A:** BrayanBot could be obtained by either downloading from Github Releases or cloning the Github repository. Users who like to live on edge may download the **dev** branch that is more up to date, but is less stable in return.
+**A:** Proxima could be obtained by either downloading from Github Releases or cloning the Github repository. Users who like to live on edge may download the **dev** branch that is more up to date, but is less stable in return.
 
 ---
 
-**Q:** Which platforms does BrayanBot support?
+**Q:** Which platforms does Proxima support?
 
-**A:** You should -in theory- be able be able to run BrayanBot on any platform supporting latest NodeJS but we (currently) only provide instructions and support for the following:
+**A:** You should -in theory- be able be able to run Proxima on any platform supporting latest NodeJS but we (currently) only provide instructions and support for the following:
 
 - Linux (Debian/Ubuntu/Arch and their derivatives)
 - Windows - not recommended
@@ -33,8 +33,8 @@ slug: faq
 
 ---
 
-**Q:** Can I use Corebot addons on BrayanBot?
+**Q:** Can I use Corebot addons on Proxima?
 
-**A:** Short answer is "no." This is due to the fact that Corebot and BrayanBot use their own, separate utilities, addon handlers and event handlers. However, you may ask a [community developer](/docs/Developers/Addons/third-party) to recreate Corebot addons with BrayanBot compatibility.
+**A:** Short answer is "no." This is due to the fact that Corebot and Proxima use their own, separate utilities, addon handlers and event handlers. However, you may ask a [community developer](/docs/Developers/Addons/third-party) to recreate Corebot addons with Proxima compatibility.
 
 ---

@@ -47,28 +47,28 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 apt-get install -y nodejs
 ```
 
-### 2. Download BrayanBot
+### 2. Download Proxima
 
-The universal bash script below can be used the download the latest version of BrayanBot from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed. Those packages are usually installed by default on most Linux distributions. 
+The universal bash script below can be used the download the latest version of Proxima from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed. Those packages are usually installed by default on most Linux distributions. 
 
 ```bash
 #!/bin/bash
-LATEST=$(curl https://api.github.com/repos/BrayanBot/BrayanBot/releases/latest -s | jq .name -r | awk '{ print $2 }')
-URL="https://github.com/BrayanBot/BrayanBot/releases/download/$LATEST/BrayanBot-$LATEST.zip"
+LATEST=$(curl https://api.github.com/repos/NeuShore/Proxima/releases/latest -s | jq .name -r | awk '{ print $2 }')
+URL="https://github.com/NeuShore/Proxima/releases/download/$LATEST/Proxima-$LATEST.zip"
 
 wget "$URL"
 ```
 
-### 3. Unzip BrayanBot
-After downloading the zip file, we need to unzip it and move into the BrayanBot directory.
+### 3. Unzip Proxima
+After downloading the zip file, we need to unzip it and move into the Proxima directory.
 
 ```bash
-unzip BrayanBot-*.zip -d ./BrayanBot && cd BrayanBot
+unzip Proxima-*.zip -d ./Proxima && cd Proxima
 ```
 
 ### 4. Copy the example config to the main `config.yml`
 
-BrayanBot needs config.yml to be in the BrayanBot directory. We will copy example.config.yml to the main config.yml file and insert our Bot's token.
+Proxima needs config.yml to be in the Proxima directory. We will copy example.config.yml to the main config.yml file and insert our Bot's token.
 
 ```bash
 cp example.config.yml config.yml && nano config.yml
@@ -76,7 +76,7 @@ cp example.config.yml config.yml && nano config.yml
 
 Enter your bot token in the config.yml file, save, and exit nano with `Ctrl+X`
 
-### 5. Install node modules & Start BrayanBot
+### 5. Install node modules & Start Proxima
 
 
 <Tabs>
@@ -121,27 +121,27 @@ sudo pacman -S zip unzip wget nano jq curl nodejs npm
 # nano does not come installed on most Arch installations, you may avoid installing nano and use vi/vim if that is your preference
 ```
 
-### 2. Download BrayanBot
-The universal bash script below can be used the download the latest version of BrayanBot from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed. Those packages are usually installed by default on most Linux distributions. 
+### 2. Download Proxima
+The universal bash script below can be used the download the latest version of Proxima from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed. Those packages are usually installed by default on most Linux distributions. 
 
 ```bash
 #!/bin/bash
-LATEST=$(curl https://api.github.com/repos/BrayanBot/BrayanBot/releases/latest -s | jq .name -r | awk '{ print $2 }')
-URL="https://github.com/BrayanBot/BrayanBot/releases/download/$LATEST/BrayanBot-$LATEST.zip"
+LATEST=$(curl https://api.github.com/repos/NeuShore/Proxima/releases/latest -s | jq .name -r | awk '{ print $2 }')
+URL="https://github.com/NeuShore/Proxima/releases/download/$LATEST/Proxima-$LATEST.zip"
 
 wget "$URL"
 ```
 
-### 3. Unzip BrayanBot
-After downloading the zip file, we need to unzip it and move into the BrayanBot directory.
+### 3. Unzip Proxima
+After downloading the zip file, we need to unzip it and move into the Proxima directory.
 
 ```bash
-unzip BrayanBot-*.zip -d ./BrayanBot && cd BrayanBot
+unzip Proxima-*.zip -d ./Proxima && cd Proxima
 ```
 
 ### 4. Copy the example config to the main `config.yml`
 
-BrayanBot needs config.yml to be in the BrayanBot directory. We will copy example.config.yml to the main config.yml file and insert our Bot's token.
+Proxima needs config.yml to be in the Proxima directory. We will copy example.config.yml to the main config.yml file and insert our Bot's token.
 
 ```bash
 cp example.config.yml config.yml && nano config.yml
@@ -149,7 +149,7 @@ cp example.config.yml config.yml && nano config.yml
 
 Enter your bot token in the config.yml file, save, and exit nano with `Ctrl+X`
 
-### 5. Install node modules & Start BrayanBot
+### 5. Install node modules & Start Proxima
 
 
 <Tabs>
@@ -185,28 +185,28 @@ pnpm install && pnpm run start --skip-dependencies
 sudo dnf install zip unzip wget jq curl gawk 
 ```
 
-### 2. Download BrayanBot
+### 2. Download Proxima
 
-The universal bash script below can be used the download the latest version of BrayanBot from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed. Those packages are usually installed by default on most Linux distributions. 
+The universal bash script below can be used the download the latest version of Proxima from Github Releases. It requires **wget**, **curl**, **jq** , and **gawk** to be installed. Those packages are usually installed by default on most Linux distributions. 
 
 ```bash
 #!/bin/bash
-LATEST=$(curl https://api.github.com/repos/BrayanBot/BrayanBot/releases/latest -s | jq .name -r | awk '{ print $2 }')
-URL="https://github.com/BrayanBot/BrayanBot/releases/download/$LATEST/BrayanBot-$LATEST.zip"
+LATEST=$(curl https://api.github.com/repos/NeuShore/Proxima/releases/latest -s | jq .name -r | awk '{ print $2 }')
+URL="https://github.com/NeuShore/Proxima/releases/download/$LATEST/Proxima-$LATEST.zip"
 
 wget "$URL"
 ```
 
-### 3. Unzip BrayanBot
-After downloading the zip file, we need to unzip it and move into the BrayanBot directory.
+### 3. Unzip Proxima
+After downloading the zip file, we need to unzip it and move into the Proxima directory.
 
 ```bash
-unzip BrayanBot-*.zip -d ./BrayanBot && cd BrayanBot
+unzip Proxima-*.zip -d ./Proxima && cd Proxima
 ```
 
 ### 4. Copy the example config to the main `config.yml`
 
-BrayanBot needs config.yml to be in the BrayanBot directory. We will copy example.config.yml to the main config.yml file and insert our Bot's token.
+Proxima needs config.yml to be in the Proxima directory. We will copy example.config.yml to the main config.yml file and insert our Bot's token.
 
 ```bash
 cp example.config.yml config.yml && nano config.yml
@@ -214,7 +214,7 @@ cp example.config.yml config.yml && nano config.yml
 
 Enter your bot token in the config.yml file, save, and exit nano with `Ctrl+X`
 
-### 5. Install node modules & Start BrayanBot
+### 5. Install node modules & Start Proxima
 
 
 <Tabs>
@@ -252,28 +252,28 @@ pnpm install && pnpm run start --skip-dependencies
 </TabItem>
 </Tabs>
 
-And that's it, you have successfully installed and started BrayanBot!
+And that's it, you have successfully installed and started Proxima!
 
 ## Power Controls
 
-If you would like to keep the bot running after you log out of your terminal/machine; you may use **PM2**. It will also allow you to have BrayanBot persist between reboots, if you configure it that way.
+If you would like to keep the bot running after you log out of your terminal/machine; you may use **PM2**. It will also allow you to have Proxima persist between reboots, if you configure it that way.
 
 ### Using PM2 Process Manager
 
 ```bash
 # Install PM2 through NPM
 sudo npm install -g pm2
-# Start BrayanBot with PM2
-pm2 start index.js --name brayanbot
+# Start Proxima with PM2
+pm2 start index.js --name Proxima
 ```
 
-- `pm2 stop brayanbot` # Stops the pm2 process
-- `pm2 restart brayanbot` # Restart the process
-- `pm2 logs brayanbot` # View recent logs as well as a live console
-- `pm2 logs brayanbot --lines 1000 | nc termbin.com 9999` # Export the bot's past logs and paste them to termbin.
+- `pm2 stop Proxima` # Stops the pm2 process
+- `pm2 restart Proxima` # Restart the process
+- `pm2 logs Proxima` # View recent logs as well as a live console
+- `pm2 logs Proxima --lines 1000 | nc termbin.com 9999` # Export the bot's past logs and paste them to termbin.
 
 ## Getting Help
 
 :::info 💡 Ran into a problem?
-Join our [support server](https://brayanbot.dev/discord) and open a ticket.
+Join our [support server](https://neushore.dev/discord) and open a ticket.
 :::

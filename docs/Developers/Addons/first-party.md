@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 ---
 
-First party addons refer strictly to addons that are created and published by the BrayanBot maintainers. 
+First party addons refer strictly to addons that are created and published by the Proxima maintainers. 
 
 The current list of First Party Addons include:
 
