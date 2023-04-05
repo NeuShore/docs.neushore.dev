@@ -9,45 +9,42 @@ description: Example config file
 
 ```yaml title="config.yml"
 Settings:
-  Token: "BOT-TOKEN"
-  Prefix: "-"
-  Storage: "database.db"
-  DevMode: false # This option will reset every addon configs.
-
-Embeds:
-  Color: "2f3136"
+  Token: "YOUR-TOKEN-HERE"
+  UseMentionPrefix: true
+  Prefix:
+    - .
+  # Weather bots can use commands or not.
+  IgnoreBots: false
+  TagForInfo: true
+  # Development options
+  DevMode: false
+  Verbose: false
+  BackupFiles:
+    - data/addon_configs/
+    - data/database/
+    - data/addons/
+    - data/commands.yml
+    - data/config.yml
+    - data/lang.yml
 
 Branding:
-  Name: "Proxima"
-  Logo: "https://avatars.githubusercontent.com/u/99198112?s=200&v=4"
-  Link: "https://neushore.dev"
+  Name: NeuShore
+  Color: "#2f3136"
+  Link: https://neushore.dev
+  Logo: https://avatars.githubusercontent.com/u/99198112
 
-WebServer:
-  Enabled: true
-  Port: 80
-  Favicon: "favicon.ico"
-  EndPoints:
-    - Type: "URL"
-      EndPoint: "/"
-      URL: "https://neushore.dev/"
+ActivityStatus:
+  # Available modes: online | idle | dnd | offline
+  Mode: online
+  Activities:
+    - Type: PLAYING
+      Text: discord.js
+    - Type: STREAMING
+      Text: NeuShore.dev
+      URL: https://neushore.dev
+    - Type: LISTENING
+      Text: for help
+    - Type: WATCHING
+      Text: "{guild-members} members."
 
-    - Type: "URL"
-      EndPoint: "/discord"
-      URL: "https://neushore.dev/discord"
-
-    - Type: "Page"
-      EndPoint: "/view/page"
-      File: "assets/viewThisPage.html"
-
-    - Type: "File"
-      EndPoint: "/download"
-      File: "assets/download.txt"
-  Ratelimit:
-    # It's recommended to keep this enabled.
-    Enabled: true
-    # Max Requests can be made per 1 minute
-    MaxRequests: 1
-    # IPs included will bypass Rate Limiting
-    BypassIPs:
-      - "127.0.0.1" # http://localhost/ | http://127.0.0.1/
 ```

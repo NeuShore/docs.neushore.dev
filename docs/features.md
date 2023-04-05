@@ -23,8 +23,5 @@ Current list of commands include:
 
 **General**
 
-- Avatar - Gets a user's avatar
 - Help - Provides a list of existing commands
-- Ping - Calculate bot's latency
-- Serverinfo - Receive info about the server your bot is in
-- Uptime - Receive your bot's current uptime.
+- Info - Provides info about bot, guild and user.
