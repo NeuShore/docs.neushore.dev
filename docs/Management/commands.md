@@ -8,99 +8,62 @@ description: Example Commands File
 ---
 
 ```yaml title="lang.yml"
-DisabledCommands: []
 General:
+  Info:
+    Enabled: true
+    Name: info
+    Type: General
+    Usage: info <bot/user/channel/guild> [parameter]
+    Cooldown: false
+    Permission:
+      - "@everyone"
+    Description: Show's Information about the Bot, User, Channel or Guild
+    DeleteCommand: false
+    Aliases:
+      - information
+    Arguments:
+      - Type: Sub Command
+        Name: bot
+        Description: Show's Information about a Bot
+      - Type: Sub Command
+        Name: guild
+        Description: Show's Information about a Guild
+      - Type: Sub Command
+        Name: user
+        Description: Show's Information about a User
+        Options:
+          - Type: User
+            Name: user
+            Description: The User to show Information about
+            Required: false
   Help:
-    Description: "Displays all Bot Commands"
-    Usage: "help"
-    Aliases: []
+    Enabled: true
+    Name: help
+    Type: General
+    Usage: help <type/command>
+    Cooldown: false
     Permission:
       - "@everyone"
-    AllowedChannels: false
+    Description: Helps you with the Bot's Commands
     DeleteCommand: false
-    SlashCommand:
-      Enabled: true
-      Data:
-        Name: help
-        Description: "Displays all Bot Commands"
+    Aliases: []
+    Arguments:
+      - Type: Sub Command
+        Name: Category
+        Description: Shows Information about a Category of Commands
         Options:
-          - Type: "string"
-            Name: "command"
-            Description: "Command for info"
-  Ping:
-    Description: "Displays Bot Pings"
-    Usage: "ping"
-    Aliases: []
-    Permission:
-      - "@everyone"
-    AllowedChannels: false
-    DeleteCommand: false
-    SlashCommand:
-      Enabled: true
-      Data:
-        Name: ping
-        Description: "Displays Bot Pings"
-  Uptime:
-    Description: "View Your Bot's Current Uptime"
-    Usage: "uptime"
-    Aliases: []
-    Permission:
-      - "@everyone"
-    AllowedChannels: false
-    DeleteCommand: false
-    SlashCommand:
-      Enabled: true
-      Data:
-        Name: uptime
-        Description: "View Your Bot's Current Uptime"
-  ServerInfo:
-    Description: "View Server's Information"
-    Usage: "serverinfo"
-    Aliases:
-      - "guildinfo"
-    Permission:
-      - "@everyone"
-    AllowedChannels: false
-    DeleteCommand: false
-    SlashCommand:
-      Enabled: true
-      Data:
-        Name: serverinfo
-        Description: "View Server's Information"
-  Avatar:
-    Description: "Displays user's avatar"
-    Usage: "avatar <user>"
-    Aliases:
-      - "av"
-    Permission:
-      - "@everyone"
-    AllowedChannels: false
-    DeleteCommand: false
-    SlashCommand:
-      Enabled: true
-      Data:
-        Name: avatar
-        Description: "Displays user's avatar"
+          - Type: String
+            Name: type
+            Description: The Type of Commands to show Information about
+            AutoComplete: true
+            Required: true
+      - Type: Sub Command
+        Name: Command
+        Description: Shows Information about a Command
         Options:
-          - Type: "User"
-            Name: "target"
-            Description: "User Mention"
-Admin:
-  Eval:
-    Description: "Runs JavaScript code"
-    Usage: "eval <code>"
-    Aliases: []
-    Permission:
-      - "Zorino#1110"
-    AllowedChannels: false
-    SlashCommand:
-      Enabled: true
-      Data:
-        Name: eval
-        Description: "Runs JavaScript code"
-        Options:
-          - Type: "String"
-            Name: "code"
-            Description: "JavaScript code"
+          - Type: String
+            Name: command
+            Description: The Command to show Information about
+            AutoComplete: true
             Required: true
 ```

@@ -33,7 +33,7 @@ After you confirm that you meet all the requirements you can start developing yo
 
 ## Creating a new addon file
 
-1. Open `Addons` Folder. (If doesn't exist, Generate by Starting the bot or manually creating it)
+1. Open `Proxima/data/addons` Folder. (If doesn't exist, Generate by Starting the bot or manually creating it)
    - Here all addons will be placed, any addons outside this folder won't be loaded.
 2. Create your file with extension `.js`. Example: `AddonName.js`
    - This file will be your addon in which you will write your code.
@@ -44,122 +44,82 @@ After you confirm that you meet all the requirements you can start developing yo
 Now, in your addon file copy and paste the code provided below to mark your file as an addon
 
 ```js
-const Utils = require("../Modules/Utils");
-const { Command } = require("../Modules/Handlers/CommandHandler");
-const {
-  EventListener,
-  EventEmitter,
-} = require("../Modules/Handlers/EventHandler");
+import { Addon } from "../../src/Modules/Structures/Handlers/Addons.js";
 
-module.exports = {
-  dependencies: [],
-  priority: 1,
-  name: "addon-name",
-  version: "1.0.0",
-  log: true,
-  author: {
-    name: "developer-name",
-    color: "hex-color-code",
-  },
-  customConfigs: {},
+const addon = new Addon('hello-world', "0.0.0");
+const addonConfig = {
+    config: {
+      Variable: "Hello"
+    },
 };
 
-module.exports.run = async (bot, addonConfig) => {
-  // Your code goes here
-};
+/** @type {addonConfig} */
+const { config } = addon.customConfig(addonConfig);
+
+addon.setLog(`This addon has loaded!`);
+
+addon.setExecute(async (manager) => {
+  console.log(`${config.Variable} world!`)
+  // Addon Code Goes here.
+})
+
+export default addon;
 ```
 
 ### Elaborating Addon Template
 
 **Modules Required**
+- `Addon`: This is imported from AddonHandler to create recognize this file as a addon.
 
-- `Utils`: Few useful functions for developers.
-- `Command`: Used for Creating Custom Commands.
-- `EventListner`: Used to listen for events emited.
-- `EventEmitter`: Used to emit events.
-
-**Object Exported**
-
-- `name`: This is the name of your addon.
-- `version`: Version of the addon.
-- `dependencies`: Array of node_module names to be installed.
-- `customConfigs`: Object defines custom configs for addon.
-- `log`: This is a value which defines what information will be logged in console on addon start.
-  - `String` - String used to log with Info prefix
-    - `_nonInfo` - If String starts with `_nonInfo` Info prefix will be removed when logging.
-  - `Boolean`
-    - `true` - Bot will send Default addon loaded message.
-    - `false` - Addon loaded message won't be sent
-  - `Object` - This will be used if `author.name` is specified. (`author.color` is optional.)
-  - `Function` - Bot will execute this function.
-- `author`: This defines author prefix for addon when logging `addon loaded`. (This is Required for log.)
-  - `String`: Addon Developer's Name (Default Hex Color `#007bff` will be used)
-  - `Object`
-    - `name`: Addon Developer's Name.
-    - `color`: Your selected hex color(will be used in default addon start log).
+**Others**
+- Variable `addon` intilizes the addon with addon's name & version.
+- Variable `addonConfig` is used to define addon's config if required.
+- Variable `config`, `lang` and `commands` are return values of `addon.customConfig` function which you can use in your addon.
+- Function `addon.setLog` is used to set what will addon log when it's fully loaded first time bot starts.
+- Function `addon.setExecute` is used to set what addon will actually run.
 
 ## Creating custom configs
 
-As you can see, there is `customConfigs` option in your addon `module.exports`.
+As you can see, there is variable `addonConfig` in template addon.
 You can use it to define custom configs for your addon.
 
-> These configs are generated under `Addon_Configs/{addon-name}` Folder.
+> These configs are generated under `Proxima/data/addon_configs/hello-world` Folder. Where `hello-world` is addon's name.
 
 ### CustomConfig construction:
 
-`customConfigs` takes Object Input as displayed below
-
-```js
-configName: {
-    type: "yml",
-    data: {},
-},
-```
-
-In more details:
-
-- `type`: This is a extension of your config. (JSON & YAML are officially Supported)
-- `data`: This object defines your config content.
+`customConfigs` takes Object Input as shown in addonTemplate
+- `[key: string]: Object | Array`
 
 Example Configs:
 
-```json
-{
-  "config": {
-    "type": "yml",
-    "data": {
-      "Enabled": true,
-      "Permission": "@everyone"
-    }
-  },
-  "lang": {
-    "type": "yml",
-    "data": {
-      "Message": {
-        "Content": "👋 Hello from Lang",
-        "Embeds": [
-          {
-            "Title": "Hello!"
-          }
-        ]
-      }
-    }
-  }
-}
+```js
+const addonConfig = {
+    config: {
+      String: "Hello",
+      Boolean: true,
+      Integer: 1,
+      Object: {
+        Hello: "World"
+      },
+      Array: ["Hello", "World"]
+    },
+};
+
+/** @type {addonConfig} */
+const { config } = addon.customConfig(addonConfig);
 ```
 
 ## Coding your Addon
 
-You will write your addon code under `run` function.
+You will write your addon code under `setExecute` function.
 
-- `bot`: This parameter is defined as [Discord.Client](https://discord.js.org/#/docs/discord.js/stable/class/Client) (This client object can be not logged into discord via token.)
-- `customConfig`: This parameter is defined as your customConfig.
-  - `customConfig[configName]` to access file's content
+- `manager`: This parameter is defined as [Discord.Client](https://discord.js.org/#/docs/discord.js/stable/class/Client) (This client object can be not logged into discord via token.)
+  - This is also an instance of our custom class `Proxima`
 
 ```js
-module.exports.run = async (bot, customConfig) => {
-  // Your code goes here
-};
+addon.setExecute(async (manager) => {
+  // Addon Code Goes here.
+})
 ```
 
 ## Creating Custom Commands
@@ -169,45 +129,37 @@ Using the config handler, you can create configurable values.
 
 **Use below code to create you custom command:**
 
+[Discord Permissions](https://discord.js.org/#/docs/discord.js/stable/class/Permissions)
+
 ```js
-const command = new Command()
-  .setType("command-type")
-  .setCommandData({
-    Name: "command-name",
-    Description: "command-description",
-    Usage: "command-usage", // Without Prefix
-    Aliases: ["command-alias", "command-alias2"],
-    Permission: ["Role", "User-id/tag/username"],
-    SlashCommand: {
+import { Command } from "../../src/Modules/Structures/Handlers/Commands.js";
+
+new Command({
+  commandData: commands["Music"],
+  requiredPermissions: {
+      bot: [],  // Any Discord Permission required for bot
+      user: []  // Any Discord Permission required for bot
+  },
+  commandData: {
       Enabled: true,
-      Data: {
-        Name: "command-name",
-        Description: "command-description",
-        Options: [],
-      },
-    },
-  })
-  .setRun(async (bot, message, args) => {
-    // Code for Legacy Commands
-  })
-  .setRunSlash(async (bot, interaction, options) => {
-    // Code for Slash Commands
-  })
-  .registerCommand()
+      Name: 'test',
+      Usage: 'test,
+      Type: 'general',
+      Cooldown: false,
+      Aliases: ['t'],
+      Permission: ['@everyone'],
+      Description: 'This is a test command.',
+      DeleteCommand: 'false',
+      Arguments: [] // SlashCommand Options
+  },
+  LegacyRun: (manager, message, args, prefixUsed, commandData) => {
+    message.reply("Test")
+  },
+  InteractionRun: (manager, interaction, commandData) => {
+    interaction.reply("Test")
+  }
+})
 ```
-
-- `Name`: Name of your command.
-- `Description`: Description of your command.
-- `Usage`: Usage of your command.
-- `Aliases`: Array of aliases of your command.
-- `Permission`: Array of permissions of your command. You can use Roles and Users or `@everyone` to set it available for everyone.
-- `SlashCommand`: Object which defines your Slash Command data.
-  - `Enabled`: Value which defines Slash Command is enabled or not.
-  - `Data`: Object which defines your Slash Command data.
-    - `Name`: Name of your Slash Command.
-    - `Description`: Description of your Slash Command.
-    - `Options`: Array of options of your Slash Command. This part will be described later.
-
 ### SlashCommand Options
 
 You can define options for your slash command.
@@ -280,30 +232,27 @@ Since you know, how to create custom commands, it's time to create your first ev
 To do it, follow the example code below:
 
 ```js
-new EventListener("event-name", async (bot, eventParameters) => {
-  // Your code for event listener goes here
-});
+import { EventListener } from "../../src/Modules/Structures/Handlers/Events.js";
+
+new EventListener("EVENT-NAME", async (manager, ...parameters) => {
+  // Code for event here.
+})
 ```
 
 Where:
 
-- `event-name`: Name of your event. You can find avaliable events list [here](https://discord.js.org/#/docs/discord.js/stable/class/Client).
+- `EVENT-NAME`: Name of your event. You can find avaliable events list [here](https://discord.js.org/#/docs/discord.js/stable/class/Client).
 - `parameters`: Object which defines your event parameters.
 
 Example Event Listener:
 
 ```js
-new EventListener("messageCreate", async (bot, message) => {
-  console.log(message.id, "| New Message:", message?.content);
-});
+new EventListener("messageCreate", async (manager, message) => {
+  console.log('New Message Recieved!')
+})
 ```
 
 **Congratulations!**
 
 You have successfully completed addon writing guide.
 Now, grab your keyboard, a good IDE and start making your own addons!
-
-## Credits
-
-- Zorino & SimonB50 for writing the Addon Guide
-- Zorino for creating all of the handlers

@@ -12,6 +12,6 @@ Welcome to the Proxima Documentation! This documentation aims to describe how to
 
 :::note
 
-You may request corrections, additions and improvements for this Documentation & Proxima over our [Discord Server](/discord)
+You may request corrections, additions and improvements for this Documentation & Proxima over our [Discord Server](https://neushore.dev/discord)
 
 :::
