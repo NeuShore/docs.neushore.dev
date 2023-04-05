@@ -38,7 +38,6 @@
       "label": "Bot Management",
       "collapsed": true,
       "items": [
-        "Management/customizing",
         "Management/config",
         "Management/lang"
       ]
@@ -47,7 +46,9 @@
       "type": "category",
       "label": "First Party Addons",
       "collapsed": true,
-      "items": ["Addons/advanced-verification"]
+      "items": [
+        "Addons/advanced-verification"
+      ]
     },
     {
       "type": "category",
