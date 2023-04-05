@@ -37,7 +37,7 @@ module.exports = {
       type: "category",
       label: "Bot Management",
       collapsed: true,
-      items: ["Management/customizing", "Management/config", "Management/lang"],
+      items: ["Management/config", "Management/lang"],
     },
     {
       type: "category",
