@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
@@ -37,7 +37,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: brayanbotdev/brayanbotdev.github.io
+          external_repository: neushore/neushore.github.io
           publish_dir: ./build
-          cname: brayanbot.dev
+          cname: docs.neushore.dev
           force_orphan: true
