@@ -84,7 +84,7 @@ const config = {
             },
             {
               label: "Releases",
-              href: "https://github.com/BrayanBot/brayanbot/releases",
+              href: "https://github.com/NeuShore/Proxima/releases",
             },
           ],
         },
@@ -93,16 +93,16 @@ const config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/BrayanBot/brayanbot",
+              href: "https://github.com/NeuShore/Proxima",
             },
             {
               label: "Discord",
-              href: "https://brayanbot.dev/discord",
+              href: "https://neushore.dev/discord",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} BrayanBot. All rights reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} NeuShore. All rights reserved.`,
     },
   },
   plugins: ["docusaurus-plugin-sass", "@docusaurus/plugin-ideal-image"],
@@ -112,7 +112,7 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/brayanbot/brayanbot.dev/edit/dev/",
+          editUrl: "https://github.com/NeuShore/docs.neushore.dev/edit/dev/",
           versions: {
             current: {
               label: "2.x",
@@ -123,7 +123,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/brayanbot/brayanbot.dev/edit/dev/",
+          editUrl: "https://github.com/NeuShore/docs.neushore.dev/edit/dev/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
